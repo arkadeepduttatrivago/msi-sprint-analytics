@@ -1,0 +1,24 @@
+---
+apiVersion: score.dev/v1b1
+metadata:
+  name: msi-sprint-analytics
+
+containers:
+  nginx:
+    image: cr.internal.prod.europe-dus1.tools.trv.cloud/msi-sprint-analytics:20260421-0920
+    resources:
+      limits:
+        cpu: 100m
+        memory: 128Mi
+      requests:
+        cpu: 50m
+        memory: 64Mi
+
+service:
+  ports:
+    http:
+      port: 80
+
+resources:
+  expose:
+    type: internal-expose
