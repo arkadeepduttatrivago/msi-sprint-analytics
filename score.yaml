@@ -5,7 +5,7 @@ metadata:
 
 containers:
   nginx:
-    image: cr.internal.prod.europe-dus1.tools.trv.cloud/msi-sprint-analytics:20260421-0920
+    image: cr.internal.prod.europe-dus1.tools.trv.cloud/msi-sprint-analytics:20260424-1618
     resources:
       limits:
         cpu: 100m

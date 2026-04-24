@@ -280,6 +280,54 @@ def build_epic_progress(issues: list[dict]) -> list[dict]:
     return result
 
 
+def merge_snapshots(stored_snapshots: list[dict],
+                    fetched_snapshots: list[dict]) -> list[dict]:
+    """Merge stored and fetched snapshots per the Snapshot Discipline rule.
+
+    See `msi-jira-analytics` `SKILL.md` for the full truth table. Summary:
+    closed snapshots are immutable; active→closed transitions flip state
+    only (never overwrite metrics with a post-close fetch); orphaned
+    stored snapshots are retained so history never disappears.
+
+    Rule table (stored × fetch):
+      not stored,      in fetch           -> append new
+      stored active,   not in fetch       -> keep stored
+      stored closed,   not in fetch       -> keep stored
+      stored active,   fetch active       -> refresh from fetch
+      stored active,   fetch closed       -> keep stored; flip state to closed
+      stored closed,   fetch any          -> keep stored (immutable)
+    """
+    old_by_name = {s["sprint_name"]: s for s in stored_snapshots}
+    new_by_name = {s["sprint_name"]: s for s in fetched_snapshots}
+
+    merged: list[dict] = []
+    for name in set(old_by_name) | set(new_by_name):
+        stored = old_by_name.get(name)
+        fetched = new_by_name.get(name)
+
+        if stored is None:
+            merged.append(fetched)
+            continue
+        if fetched is None:
+            merged.append(stored)
+            continue
+
+        stored_state = stored.get("sprint_state")
+        fetched_state = fetched.get("sprint_state")
+
+        if stored_state == "closed":
+            merged.append(stored)
+        elif fetched_state == "closed":
+            frozen = dict(stored)
+            frozen["sprint_state"] = "closed"
+            merged.append(frozen)
+        else:
+            merged.append(fetched)
+
+    merged.sort(key=lambda s: s.get("sprint_start") or "9999")
+    return merged
+
+
 def main():
     raw_file = find_latest_raw()
     print(f"Reading raw data: {raw_file.name}")
@@ -347,34 +395,12 @@ def main():
             "issues": issues,
         })
 
-    # Load existing data and merge
     existing = {"board_id": 7527, "snapshots": [], "epics": [], "all_issues_latest": []}
     if DATA_FILE.exists():
         with open(DATA_FILE, "r", encoding="utf-8") as f:
             existing = json.load(f)
 
-    old_snapshots = existing.get("snapshots", [])
-    merged_snapshots = []
-
-    old_by_name = {s["sprint_name"]: s for s in old_snapshots}
-    new_by_name = {s["sprint_name"]: s for s in new_snapshots}
-
-    for name, snap in old_by_name.items():
-        if name in new_by_name:
-            if snap.get("sprint_state") == "closed":
-                merged_snapshots.append(snap)
-            else:
-                merged_snapshots.append(new_by_name[name])
-        else:
-            merged_snapshots.append(snap)
-
-    for name, snap in new_by_name.items():
-        if name not in old_by_name:
-            merged_snapshots.append(snap)
-
-    valid_names = set(new_by_name.keys())
-    merged_snapshots = [s for s in merged_snapshots if s["sprint_name"] in valid_names]
-    merged_snapshots.sort(key=lambda s: s.get("sprint_start") or "9999")
+    merged_snapshots = merge_snapshots(existing.get("snapshots", []), new_snapshots)
 
     # Build epic progress from ALL issues
     epic_progress = build_epic_progress(issues)

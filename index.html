@@ -781,7 +781,7 @@ function updateAlertBadge(){
 
 /* ── Init ─────────────────────────────────────────────────────────── */
 async function init(){
-  try{DATA=await fetch('sprints.json?v='+Date.now()).then(r=>r.json())}
+  try{DATA=await fetch('data/sprints.json?v='+Date.now()).then(r=>r.json())}
   catch(e){document.querySelector('.main').innerHTML='<div class="empty">Could not load sprints.json.</div>';return}
   buildSprintTeams();
   populateFilters();

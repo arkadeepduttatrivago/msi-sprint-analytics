@@ -1,4 +1,4 @@
-name: Update Sprint Data
+name: Update Sprint Data & Deploy
 
 on:
   schedule:
@@ -12,6 +12,9 @@ on:
         description: 'Override JQL query (leave empty for default)'
         required: false
         type: string
+  push:
+    branches: [main]
+    paths: [data/sprints.json]
 
 env:
   JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
@@ -22,6 +25,7 @@ env:
 jobs:
   fetch-and-update:
     runs-on: ubuntu-latest
+    if: github.event_name != 'push'
     permissions:
       contents: write
 
@@ -56,3 +60,33 @@ jobs:
             git commit -m "chore: update sprint data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             git push
           fi
+
+  deploy-pages:
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [fetch-and-update]
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Pull latest (in case fetch job pushed)
+        run: git pull origin main
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
