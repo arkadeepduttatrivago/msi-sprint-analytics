@@ -2,8 +2,10 @@ name: Update Sprint Data & Deploy
 
 on:
   schedule:
-    # Every day at 07:00 UTC (09:00 CET)
-    - cron: '0 7 * * *'
+    # Sunday 18:00 UTC (20:00 CET) — final Sprint X snapshot before close
+    - cron: '0 18 * * 0'
+    # Monday–Saturday 07:00 UTC (09:00 CET) — keep active sprint fresh
+    - cron: '0 7 * * 1-6'
   workflow_dispatch:
     inputs:
       jql_override:
