@@ -2,9 +2,9 @@ name: Update Sprint Data & Deploy
 
 on:
   schedule:
-    # Monday 10:00 UTC (12:00 CET) — pre-close snapshot of Sprint X
-    - cron: "0 10 * * 1"
-    # Tuesday 07:00 UTC (09:00 CET) — post-open snapshot of Sprint X+1
+    # Monday 07:00 UTC (09:00 CET) — pre-close: final Sprint X numbers
+    - cron: "0 7 * * 1"
+    # Tuesday 07:00 UTC (09:00 CET) — post-open: Sprint X frozen + Sprint X+1 fresh
     - cron: "0 7 * * 2"
   workflow_dispatch:
     inputs:
