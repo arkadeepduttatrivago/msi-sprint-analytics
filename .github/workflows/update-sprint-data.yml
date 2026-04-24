@@ -18,8 +18,6 @@ env:
   JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
   JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
   JIRA_CLOUD_ID: ${{ secrets.JIRA_CLOUD_ID }}
-  REGISTRY: cr.internal.prod.europe-dus1.tools.trv.cloud
-  IMAGE_NAME: msi-sprint-analytics
 
 jobs:
   fetch-and-update:
@@ -89,31 +87,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  deploy-internal:
-    runs-on: ubuntu-latest
-    needs: [fetch-and-update]
-    if: always() && !failure() && !cancelled()
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Pull latest
-        run: git pull origin main
-
-      - name: Log in to trivago registry
-        uses: docker/login-action@v3
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ secrets.TRV_REGISTRY_USERNAME }}
-          password: ${{ secrets.TRV_REGISTRY_PASSWORD }}
-
-      - name: Build and push Docker image
-        run: |
-          TAG=$(date -u +%Y%m%d-%H%M)
-          docker build -f Dockerfile.nginx -t $REGISTRY/$IMAGE_NAME:$TAG -t $REGISTRY/$IMAGE_NAME:latest .
-          docker push $REGISTRY/$IMAGE_NAME:$TAG
-          docker push $REGISTRY/$IMAGE_NAME:latest
