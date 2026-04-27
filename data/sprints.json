@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-26T08:35:41.204693+00:00",
+  "last_updated": "2026-04-27T09:25:02.809354+00:00",
   "board_id": 7527,
   "board_name": "MSI_OKR_SUMMER_2026",
   "snapshots": [
     {
-      "snapshot_date": "2026-04-26T08:35:41.204693+00:00",
+      "snapshot_date": "2026-04-26T08:50:26.474945+00:00",
       "sprint_name": "BRAND_CIM_SPRINT_1",
       "sprint_state": "active",
       "sprint_start": "2026-04-10",
@@ -926,7 +926,7 @@
       ]
     },
     {
-      "snapshot_date": "2026-04-26T08:35:41.204693+00:00",
+      "snapshot_date": "2026-04-26T08:50:26.474945+00:00",
       "sprint_name": "MSI_EXP_SPRINT_1",
       "sprint_state": "active",
       "sprint_start": "2026-04-13",
@@ -2239,18 +2239,18 @@
       ]
     },
     {
-      "snapshot_date": "2026-04-26T08:35:41.204693+00:00",
+      "snapshot_date": "2026-04-27T09:25:02.809354+00:00",
       "sprint_name": "MSI_OPS_SPRINT_1",
       "sprint_state": "active",
       "sprint_start": "2026-04-13",
       "sprint_end": "2026-04-27",
       "metrics": {
-        "committed_sp": 57.1,
-        "completed_sp": 47.6,
-        "velocity": 47.6,
-        "committed_count": 35,
-        "completed_count": 28,
-        "commitment_ratio": 0.834,
+        "committed_sp": 60.1,
+        "completed_sp": 50.6,
+        "velocity": 50.6,
+        "committed_count": 36,
+        "completed_count": 29,
+        "commitment_ratio": 0.842,
         "carry_over_sp": 9.5,
         "carry_over_count": 7,
         "unestimated_subtasks": 3,
@@ -2274,6 +2274,12 @@
             "count": 5
           },
           {
+            "assignee": "Maria Koulouria",
+            "committed_sp": 7.0,
+            "completed_sp": 7.0,
+            "count": 3
+          },
+          {
             "assignee": "Mario Alberto da Silveira Dib",
             "committed_sp": 6.0,
             "completed_sp": 6.0,
@@ -2283,12 +2289,6 @@
             "assignee": "Gyeong-in Shin",
             "committed_sp": 6.0,
             "completed_sp": 6.0,
-            "count": 2
-          },
-          {
-            "assignee": "Maria Koulouria",
-            "committed_sp": 4.0,
-            "completed_sp": 4.0,
             "count": 2
           },
           {
@@ -2324,8 +2324,8 @@
           },
           {
             "team": "MSI_OPS",
-            "committed_sp": 37.0,
-            "completed_sp": 36.0
+            "committed_sp": 40.0,
+            "completed_sp": 39.0
           },
           {
             "team": "Unknown",
@@ -2380,12 +2380,12 @@
           ]
         },
         "MSI_OPS": {
-          "committed_sp": 37.0,
-          "completed_sp": 36.0,
-          "velocity": 36.0,
-          "committed_count": 23,
-          "completed_count": 21,
-          "commitment_ratio": 0.973,
+          "committed_sp": 40.0,
+          "completed_sp": 39.0,
+          "velocity": 39.0,
+          "committed_count": 24,
+          "completed_count": 22,
+          "commitment_ratio": 0.975,
           "carry_over_sp": 1.0,
           "carry_over_count": 2,
           "unestimated_subtasks": 3,
@@ -2395,6 +2395,12 @@
               "committed_sp": 12.0,
               "completed_sp": 11.0,
               "count": 8
+            },
+            {
+              "assignee": "Maria Koulouria",
+              "committed_sp": 7.0,
+              "completed_sp": 7.0,
+              "count": 3
             },
             {
               "assignee": "Gyeong-in Shin",
@@ -2419,19 +2425,13 @@
               "committed_sp": 5.0,
               "completed_sp": 5.0,
               "count": 5
-            },
-            {
-              "assignee": "Maria Koulouria",
-              "committed_sp": 4.0,
-              "completed_sp": 4.0,
-              "count": 2
             }
           ],
           "per_team": [
             {
               "team": "MSI_OPS",
-              "committed_sp": 37.0,
-              "completed_sp": 36.0
+              "committed_sp": 40.0,
+              "completed_sp": 39.0
             }
           ]
         },
@@ -2884,7 +2884,7 @@
         {
           "key": "MSI-1891",
           "summary": "Align on test results / Express as new coefficient Part : 1",
-          "status": "Completed",
+          "status": "Done",
           "status_category": "Done",
           "issue_type": "Sub-task",
           "hierarchy_level": -1,
@@ -2898,7 +2898,7 @@
           "team": "MSI_OPS",
           "story_points": 3.0,
           "due_date": "2026-04-24",
-          "resolution_date": null,
+          "resolution_date": "2026-04-27",
           "sprint_name": "MSI_OPS_SPRINT_1",
           "sprint_state": "active",
           "sprint_start": "2026-04-13",
@@ -5699,30 +5699,6 @@
       "sprint_start": "2026-04-13",
       "sprint_end": "2026-04-27",
       "category": "adhoc"
-    },
-    {
-      "key": "MSI-1680",
-      "summary": "[TEST] Define financial driver tree taxonomy",
-      "status": "Completed",
-      "status_category": "Done",
-      "issue_type": "Task",
-      "hierarchy_level": 0,
-      "assignee": "Unassigned",
-      "parent_key": "MSI-1404",
-      "parent_summary": "INITIATIVE 14 REDO: Enable data-driven upspend decisions by establishing a validates pipeline of high-impacting marketing opportunities",
-      "labels": [
-        "MSI_OKRS_2026",
-        "MSI_OPS"
-      ],
-      "team": "MSI_OPS",
-      "story_points": 3.0,
-      "due_date": "2026-04-25",
-      "resolution_date": null,
-      "sprint_name": null,
-      "sprint_state": null,
-      "sprint_start": null,
-      "sprint_end": null,
-      "category": "okr"
     },
     {
       "key": "MSI-1681",
@@ -12819,6 +12795,30 @@
       ],
       "team": "MSI_BRAND_CIM",
       "story_points": 1.0,
+      "due_date": "2026-05-08",
+      "resolution_date": null,
+      "sprint_name": null,
+      "sprint_state": null,
+      "sprint_start": null,
+      "sprint_end": null,
+      "category": "adhoc"
+    },
+    {
+      "key": "MSI-2064",
+      "summary": "Dealfinder North star workshop",
+      "status": "Backlog",
+      "status_category": "To Do",
+      "issue_type": "Task",
+      "hierarchy_level": 0,
+      "assignee": "Maria Bonerz",
+      "parent_key": "MSI-1840",
+      "parent_summary": "Adhocs_MSI_OKR_Summer",
+      "labels": [
+        "MSI_BRAND_CIM",
+        "MSI_OKRS_2026"
+      ],
+      "team": "MSI_BRAND_CIM",
+      "story_points": 0.25,
       "due_date": "2026-05-08",
       "resolution_date": null,
       "sprint_name": null,
