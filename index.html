@@ -211,8 +211,31 @@ function buildSprintTeams(){
 
 function relevantSprints(){
   const all=DATA.snapshots.filter(s=>s.sprint_name!=='Board Snapshot');
-  if(F.team==='all') return all;
-  return all.filter(s=>(SPRINT_TEAMS[s.sprint_name]||[]).includes(F.team));
+  const teamMatch=s=>F.team==='all'||(SPRINT_TEAMS[s.sprint_name]||[]).includes(F.team);
+  const byTeam=all.filter(teamMatch);
+  if(F.sprint&&F.sprint!=='all'){
+    const exact=byTeam.filter(s=>s.sprint_name===F.sprint);
+    return exact.length?exact:byTeam.filter(s=>s.sprint_name===F.sprint);
+  }
+  return byTeam;
+}
+
+/* Smart default sprint:
+   team='all'  -> any sprint with state=active; if multiple, the most
+                  recently started (covers "current period").
+   team=X      -> active sprint for that team; else the most recently
+                  started closed sprint for that team. */
+function defaultSprintFor(team){
+  const all=DATA.snapshots.filter(s=>s.sprint_name!=='Board Snapshot');
+  const matchesTeam=s=>team==='all'||(SPRINT_TEAMS[s.sprint_name]||[]).includes(team);
+  const startKey=s=>s.sprint_start||'0000-00-00';
+  const eligible=all.filter(matchesTeam);
+  if(!eligible.length) return 'all';
+  const active=eligible.filter(s=>s.sprint_state==='active');
+  if(active.length){
+    return active.sort((a,b)=>startKey(b).localeCompare(startKey(a)))[0].sprint_name;
+  }
+  return eligible.sort((a,b)=>startKey(b).localeCompare(startKey(a)))[0].sprint_name;
 }
 
 function snap(n){return DATA.snapshots.find(s=>s.sprint_name===n)}
@@ -353,32 +376,43 @@ function vbarTooltips(){
 
 /* ── Filters ─────────────────────────────────────────────────────── */
 function populateFilters(){
-  updateSprintDropdown();
+  updateSprintDropdown({forceDefault:true});
   const aSel=document.getElementById('f-assignee');
   aSel.innerHTML='<option value="all">All Assignees</option>'+allAssignees().map(a=>`<option value="${a}">${a}</option>`).join('');
   document.getElementById('last-updated').textContent='Updated: '+(DATA.last_updated||'').slice(0,16);
 }
 
-function updateSprintDropdown(){
+function updateSprintDropdown(opts){
   const sel=document.getElementById('f-sprint');
   const prevVal=sel.value||'all';
   const activeChip=document.querySelector('.tc.active');
   const teamFilter=activeChip?activeChip.dataset.team:'all';
   const available=DATA.snapshots.filter(s=>{
-    if(s.sprint_name==='Board Snapshot') return true;
+    if(s.sprint_name==='Board Snapshot') return false;
     if(teamFilter==='all') return true;
     return (SPRINT_TEAMS[s.sprint_name]||[]).includes(teamFilter);
   });
-  sel.innerHTML='<option value="all">All Sprints</option>'+available.map(s=>`<option value="${s.sprint_name}">${s.sprint_name}</option>`).join('');
-  if([...sel.options].some(o=>o.value===prevVal)) sel.value=prevVal;
-  else sel.value='all';
+  const def=defaultSprintFor(teamFilter);
+  sel.innerHTML='<option value="all">All Sprints</option>'+available.map(s=>{
+    const isDef=s.sprint_name===def;
+    const stateTag=s.sprint_state==='active'?' \u2022 active':s.sprint_state==='closed'?' \u2022 closed':'';
+    return `<option value="${s.sprint_name}">${s.sprint_name}${stateTag}${isDef?' (latest)':''}</option>`;
+  }).join('');
+  const wantDefault=opts&&opts.forceDefault;
+  let pick=def;
+  if(!wantDefault&&[...sel.options].some(o=>o.value===prevVal)) pick=prevVal;
+  sel.value=[...sel.options].some(o=>o.value===pick)?pick:'all';
+  F.sprint=sel.value;
 }
 
 document.getElementById('t-chips').addEventListener('click',e=>{
   const c=e.target.closest('.tc');if(!c)return;
   document.querySelectorAll('.tc').forEach(x=>x.classList.remove('active'));
   c.classList.add('active');
-  updateSprintDropdown();
+  F.team=c.dataset.team;
+  updateSprintDropdown({forceDefault:true});
+  updateAlertBadge();
+  renderActive();
 });
 
 document.getElementById('apply-btn').addEventListener('click',()=>{

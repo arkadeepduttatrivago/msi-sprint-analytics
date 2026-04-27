@@ -13,3 +13,5 @@ scripts/patch_ops1_msi1891.py
 scripts/verify_patch.py
 scripts/diagnose_overview_vs_team.py
 scripts/check_sprint_names.py
+scripts/preview_defaults.py
+scripts/preview_perperson.py
