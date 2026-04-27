@@ -4,3 +4,12 @@ __pycache__/
 .env
 .last-deploy-date.txt
 data/raw/
+
+data/sprints.backup.*.json
+
+scripts/inspect_ops1.py
+scripts/inspect_ops1_per_person.py
+scripts/patch_ops1_msi1891.py
+scripts/verify_patch.py
+scripts/diagnose_overview_vs_team.py
+scripts/check_sprint_names.py

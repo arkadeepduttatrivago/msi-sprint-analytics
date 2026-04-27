@@ -24,6 +24,28 @@ BOARD_ID = 7527
 BAU_EPIC = "MSI-1839"
 ADHOC_EPIC = "MSI-1840"
 
+# Sprint-name -> team mapping. The sprint container is the source of truth
+# for "which team is doing this work right now". A ticket sitting in
+# MSI_OPS_SPRINT_2 is OPS work for that sprint, regardless of its labels.
+# Order matters: longer prefixes must come first so MSI_BRAND_CIM beats
+# any shorter MSI_ prefix that might be added in future.
+SPRINT_TEAM_PREFIXES: list[tuple[str, str]] = [
+    ("MSI_BRAND_CIM_SPRINT_", "MSI_BRAND_CIM"),
+    ("BRAND_CIM_SPRINT_",     "MSI_BRAND_CIM"),
+    ("MSI_OPS_SPRINT_",       "MSI_OPS"),
+    ("MSI_EXP_SPRINT_",       "MSI_EXP"),
+]
+
+
+def team_from_sprint_name(sprint_name: str | None) -> str | None:
+    """Return the team derived from a sprint container name, or None."""
+    if not sprint_name:
+        return None
+    for prefix, team in SPRINT_TEAM_PREFIXES:
+        if sprint_name.startswith(prefix):
+            return team
+    return None
+
 STATUS_NORMALIZE: dict[str, str] = {
     "READY FOR SPRINT": "Ready for Sprint",
     "SELECTED FOR DEVELOPMENT": "Selected for Development",
@@ -58,11 +80,6 @@ def extract_issue(raw: dict) -> dict:
     assignee = f.get("assignee")
     parent = f.get("parent")
     labels = f.get("labels", [])
-    team = "Unknown"
-    for lbl in labels:
-        if lbl in TEAM_LABELS:
-            team = lbl
-            break
 
     sprint_data = f.get("customfield_10020") or f.get("sprint")
     sprint_name = None
@@ -84,6 +101,23 @@ def extract_issue(raw: dict) -> dict:
             sprint_state = sprint_data.get("state")
             sprint_start = sprint_data.get("startDate", "")[:10] if sprint_data.get("startDate") else None
             sprint_end = sprint_data.get("endDate", "")[:10] if sprint_data.get("endDate") else None
+
+    # Team derivation. Source-of-truth order:
+    #   1. Sprint container name (MSI_OPS_SPRINT_1 -> MSI_OPS).
+    #   2. Team label on the ticket (MSI_OPS / MSI_EXP / MSI_BRAND_CIM).
+    #   3. "Unknown" — only if no sprint and no label.
+    # The sprint wins over the label so cross-team work (e.g. a Brand-
+    # labelled sub-task pulled into OPS Sprint 1) gets attributed to the
+    # team actually executing it that sprint. This makes the dashboard's
+    # Sprint Overview totals reconcile with the Team Breakdown totals.
+    team = team_from_sprint_name(sprint_name)
+    if team is None:
+        for lbl in labels:
+            if lbl in TEAM_LABELS:
+                team = lbl
+                break
+    if team is None:
+        team = "Unknown"
 
     return {
         "key": raw.get("key", ""),
