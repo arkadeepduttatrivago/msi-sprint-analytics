@@ -73,6 +73,18 @@ body{font-family:var(--font);background:var(--trv-warm-white);color:var(--trv-gr
 .bar-fill{height:100%;border-radius:4px;position:relative;min-width:1px;transition:width .3s}
 .bar-val{position:absolute;right:-40px;top:0;font-size:11px;font-weight:600;color:var(--trv-gray-700);line-height:22px;width:38px}
 
+/* Per-person stacked progress bar: completed (blue) + in-progress (orange) + remaining (gray) */
+.pp-row{display:flex;align-items:center;margin-bottom:6px;gap:10px}
+.pp-label{width:160px;font-size:12px;color:var(--trv-gray-900);font-weight:600;text-align:right;padding-right:8px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pp-track{flex:1;max-width:560px;height:22px;background:var(--trv-gray-200);border-radius:4px;overflow:hidden;display:flex;position:relative;cursor:default}
+.pp-seg{height:100%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;transition:width .3s;min-width:0;overflow:hidden;white-space:nowrap}
+.pp-seg-done{background:var(--trv-blue)}
+.pp-seg-prog{background:var(--trv-orange)}
+.pp-seg-rest{background:var(--trv-gray-300);color:var(--trv-gray-700)}
+.pp-stats{font-size:11px;color:var(--trv-gray-700);font-weight:600;flex-shrink:0;width:140px}
+.pp-stats b{color:var(--trv-gray-900);font-weight:700}
+.pp-pct{display:inline-block;min-width:38px;text-align:right;color:var(--trv-blue);font-weight:700}
+
 .legend{display:flex;gap:14px;margin:8px 0;flex-wrap:wrap}
 .legend-item{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--trv-gray-700)}
 .legend-sq{width:12px;height:12px;border-radius:3px}
@@ -200,7 +212,7 @@ const COMPLETED_SET=new Set(['Feedback','Done','Submitted','Awaiting Feedback'])
 const IN_PROGRESS_SET=new Set(['In Progress']);
 const NOT_SPRINT=new Set(['Backlog','Completed','Completed: Not Part of Sprint']);
 
-let DATA=null,F={sprint:'all',team:'all',assignee:'all'};
+let DATA=null,F={sprint:'active',team:'all',assignee:'all'};
 let SPRINT_TEAMS={};
 
 /* ── Helpers ─────────────────────────────────────────────────────── */
@@ -218,6 +230,9 @@ function relevantSprints(){
   const all=DATA.snapshots.filter(s=>s.sprint_name!=='Board Snapshot');
   const teamMatch=s=>F.team==='all'||(SPRINT_TEAMS[s.sprint_name]||[]).includes(F.team);
   const byTeam=all.filter(teamMatch);
+  if(F.sprint==='active'){
+    return byTeam.filter(s=>s.sprint_state==='active');
+  }
   if(F.sprint&&F.sprint!=='all'){
     const exact=byTeam.filter(s=>s.sprint_name===F.sprint);
     return exact.length?exact:byTeam.filter(s=>s.sprint_name===F.sprint);
@@ -226,10 +241,11 @@ function relevantSprints(){
 }
 
 /* Smart default sprint:
-   team='all'  -> any sprint with state=active; if multiple, the most
-                  recently started (covers "current period").
-   team=X      -> active sprint for that team; else the most recently
-                  started closed sprint for that team. */
+   team='all'  -> 'active' sentinel = all currently active sprints
+                  aggregated. Falls back to most recently started sprint
+                  if there are no active ones (off-cycle weeks).
+   team=X      -> 'active' sentinel if X has any active sprint; else
+                  the most recently started closed sprint for that team. */
 function defaultSprintFor(team){
   const all=DATA.snapshots.filter(s=>s.sprint_name!=='Board Snapshot');
   const matchesTeam=s=>team==='all'||(SPRINT_TEAMS[s.sprint_name]||[]).includes(team);
@@ -237,9 +253,7 @@ function defaultSprintFor(team){
   const eligible=all.filter(matchesTeam);
   if(!eligible.length) return 'all';
   const active=eligible.filter(s=>s.sprint_state==='active');
-  if(active.length){
-    return active.sort((a,b)=>startKey(b).localeCompare(startKey(a)))[0].sprint_name;
-  }
+  if(active.length) return 'active';
   return eligible.sort((a,b)=>startKey(b).localeCompare(startKey(a)))[0].sprint_name;
 }
 
@@ -408,7 +422,7 @@ function populateFilters(){
 
 function updateSprintDropdown(opts){
   const sel=document.getElementById('f-sprint');
-  const prevVal=sel.value||'all';
+  const prevVal=sel.value||'active';
   const activeChip=document.querySelector('.tc.active');
   const teamFilter=activeChip?activeChip.dataset.team:'all';
   const available=DATA.snapshots.filter(s=>{
@@ -416,16 +430,37 @@ function updateSprintDropdown(opts){
     if(teamFilter==='all') return true;
     return (SPRINT_TEAMS[s.sprint_name]||[]).includes(teamFilter);
   });
+  const startKey=s=>s.sprint_start||'0000-00-00';
+  const active=available.filter(s=>s.sprint_state==='active')
+    .sort((a,b)=>startKey(b).localeCompare(startKey(a)));
+  const closed=available.filter(s=>s.sprint_state!=='active')
+    .sort((a,b)=>startKey(b).localeCompare(startKey(a)));
   const def=defaultSprintFor(teamFilter);
-  sel.innerHTML='<option value="all">All Sprints</option>'+available.map(s=>{
-    const isDef=s.sprint_name===def;
-    const stateTag=s.sprint_state==='active'?' \u2022 active':s.sprint_state==='closed'?' \u2022 closed':'';
-    return `<option value="${s.sprint_name}">${s.sprint_name}${stateTag}${isDef?' (latest)':''}</option>`;
-  }).join('');
+  let html='';
+  if(active.length){
+    const isDef=def==='active';
+    html+=`<option value="active">All Active Sprints${isDef?' (latest)':''}</option>`;
+  }
+  html+='<option value="all">All Sprints (incl. closed)</option>';
+  if(active.length){
+    html+='<option disabled>\u2500\u2500 Active \u2500\u2500</option>';
+    html+=active.map(s=>{
+      const isDef=s.sprint_name===def;
+      return `<option value="${s.sprint_name}">${s.sprint_name} \u2022 active${isDef?' (latest)':''}</option>`;
+    }).join('');
+  }
+  if(closed.length){
+    html+='<option disabled>\u2500\u2500 Closed \u2500\u2500</option>';
+    html+=closed.map(s=>{
+      const isDef=s.sprint_name===def;
+      return `<option value="${s.sprint_name}">${s.sprint_name} \u2022 closed${isDef?' (latest)':''}</option>`;
+    }).join('');
+  }
+  sel.innerHTML=html;
   const wantDefault=opts&&opts.forceDefault;
   let pick=def;
   if(!wantDefault&&[...sel.options].some(o=>o.value===prevVal)) pick=prevVal;
-  sel.value=[...sel.options].some(o=>o.value===pick)?pick:'all';
+  sel.value=[...sel.options].some(o=>o.value===pick)?pick:(active.length?'active':'all');
   F.sprint=sel.value;
 }
 
@@ -572,13 +607,15 @@ function rPerson(){
   });
   if(!persons.length){el.innerHTML='<div class="empty">No data for selected filters.</div>';return}
 
-  let h=st('Story Points by Person & Sprint');
+  let h=st('Committed vs Done by Person');
   const spNames=sps.map(s=>s.sprint_name);
   const maxV=Math.max(...persons.map(([_,d])=>Object.values(d).reduce((s,v)=>s+v.committed,0)),1);
 
-  h+=hbar(persons.map(([name,d])=>{
+  h+=persons.map(([name,d])=>{
     const total=Object.values(d).reduce((s,v)=>s+v.committed,0);
     const comp=Object.values(d).reduce((s,v)=>s+v.completed,0);
+    const inprog=Object.values(d).reduce((s,v)=>s+v.inprog,0);
+    const rest=Math.max(0,total-comp-inprog);
     const spDetail=spNames.filter(sn=>d[sn]).map(sn=>`${sn}: ${d[sn].committed.toFixed(1)}`).join(' | ');
     const lowSpSprints=spNames.filter(sn=>d[sn]&&d[sn].committed>0&&d[sn].committed<5);
     const highSpSprints=spNames.filter(sn=>d[sn]&&d[sn].committed>10);
@@ -591,8 +628,21 @@ function rPerson(){
       const tip=highSpSprints.map(sn=>`Way too many SP: ${d[sn].committed.toFixed(1)} in ${sn}`).join(', ');
       labelHtml+=` <span class="high-sp" data-tooltip="${tip}">⚠</span>`;
     }
-    return{label:name,labelHtml,value:total,color:C.BLUE,tooltip:`${name}: ${total.toFixed(1)} SP total, ${comp.toFixed(1)} done | ${spDetail}`};
-  }),maxV);
+    const trackWidthPct=total?Math.max(15,(total/maxV)*100):0;
+    const segPct=v=>total?(v/total)*100:0;
+    const pctDone=total?Math.round(comp/total*100):0;
+    const tip=`${name}: ${comp.toFixed(1)} done / ${inprog.toFixed(1)} in progress / ${rest.toFixed(1)} not started of ${total.toFixed(1)} SP total | ${spDetail}`;
+    return `<div class="pp-row">
+      <div class="pp-label" title="${name}">${labelHtml}</div>
+      <div class="pp-track" data-tooltip="${tip}" style="width:${trackWidthPct}%">
+        ${comp>0?`<div class="pp-seg pp-seg-done" style="width:${segPct(comp)}%">${segPct(comp)>12?comp.toFixed(1):''}</div>`:''}
+        ${inprog>0?`<div class="pp-seg pp-seg-prog" style="width:${segPct(inprog)}%">${segPct(inprog)>12?inprog.toFixed(1):''}</div>`:''}
+        ${rest>0?`<div class="pp-seg pp-seg-rest" style="width:${segPct(rest)}%">${segPct(rest)>12?rest.toFixed(1):''}</div>`:''}
+      </div>
+      <div class="pp-stats"><b>${comp.toFixed(1)}</b> / ${total.toFixed(1)} SP <span class="pp-pct">${pctDone}%</span></div>
+    </div>`;
+  }).join('');
+  h+=legend([{label:'Completed',color:C.BLUE},{label:'In Progress',color:C.ORANGE},{label:'Not Started',color:C.G300}]);
 
   h+=st('Person Summary');
   h+=table(['Assignee','Total SP','Completed SP','Completion %'],
