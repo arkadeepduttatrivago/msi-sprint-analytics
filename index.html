@@ -232,9 +232,23 @@ const C={RED:'#E32851',BLUE:'#0088D9',ORANGE:'#FF932C',PINK:'#FF9DDE',LB:'#78DAF
   SERIES:['#E32851','#FF932C','#0088D9','#FF9DDE','#78DAFF','#FFCC31']};
 const TC={MSI_OPS:C.BLUE,MSI_EXP:C.ORANGE,MSI_BRAND_CIM:C.RED};
 const TD={MSI_BRAND_CIM:'Brand & CIM',MSI_EXP:'Experimentation',MSI_OPS:'Operations',Unknown:'Unassigned'};
-const COMPLETED_SET=new Set(['Feedback','Done','Submitted','Awaiting Feedback']);
+/* Status taxonomy — mirrors scripts/build_data.py.
+   Two intentional rule sets:
+   - SPRINT context (used here): Committed = whole board (Selected,
+     Ready for Sprint, On Hold, Rejected, Rejected / On Hold,
+     In Progress, plus everything in COMPLETED_SET). Done = Feedback,
+     Submitted, Awaiting Feedback, Done, Completed. Out-of-sprint
+     Completed* variants and Stacked are excluded — they did not
+     contribute to that sprint's velocity.
+   - INITIATIVE context: precomputed in Python, not in JS. */
+const COMPLETED_SET=new Set(['Feedback','Submitted','Awaiting Feedback','Done','Completed']);
 const IN_PROGRESS_SET=new Set(['In Progress']);
-const NOT_SPRINT=new Set(['Backlog','Completed','Completed: Not Part of Sprint']);
+const NOT_SPRINT=new Set([
+  'Backlog',
+  'Stacked','Stacked Old',
+  'Completed : Not Part of Sprint','Completed Not Part of Sprint',
+  'Completed: Not Part of Sprint'
+]);
 
 let DATA=null,F={sprint:'active',team:'all',assignee:'all'};
 let SPRINT_TEAMS={};
@@ -848,11 +862,11 @@ function rCompletion(){
   relSprints.forEach(s=>{
     const allIss=issues(s.sprint_name,tm,asgn).filter(i=>!NOT_SPRINT.has(i.status));
     if(!allIss.length) return;
-    const committed=allIss.filter(i=>!IN_PROGRESS_SET.has(i.status)&&!COMPLETED_SET.has(i.status));
+    const todo=allIss.filter(i=>!IN_PROGRESS_SET.has(i.status)&&!COMPLETED_SET.has(i.status));
     const inprog=allIss.filter(i=>IN_PROGRESS_SET.has(i.status));
     const completed=allIss.filter(i=>COMPLETED_SET.has(i.status));
     h+=`<div class="exp" onclick="this.classList.toggle('open')">
-      <div class="exp-h"><span><strong>${s.sprint_name}</strong> — ${allIss.length} tickets (${committed.length} committed, ${inprog.length} in progress, ${completed.length} completed)</span><span class="exp-arr">▶</span></div>
+      <div class="exp-h"><span><strong>${s.sprint_name}</strong> — ${allIss.length} committed (${todo.length} to-do, ${inprog.length} in progress, ${completed.length} completed)</span><span class="exp-arr">▶</span></div>
       <div class="exp-b">`;
     h+=table(['Key','Summary','Assignee','Status','SP','Team'],
       allIss.sort((a,b)=>{

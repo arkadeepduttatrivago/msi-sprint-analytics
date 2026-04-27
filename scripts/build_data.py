@@ -17,8 +17,65 @@ BASE = Path(__file__).resolve().parent.parent
 RAW_DIR = BASE / "data" / "raw"
 DATA_FILE = BASE / "data" / "sprints.json"
 
-COMPLETED_STATUSES = {"Feedback", "Done", "Submitted", "Awaiting Feedback"}
-NOT_IN_SPRINT_STATUSES = {"Backlog", "Completed", "Completed: Not Part of Sprint"}
+# Status taxonomy — TWO RULE SETS that intentionally differ.
+#
+# Rule A: SPRINT context (Sprint Overview, Per Person, Velocity, Completion)
+#   "Committed in this sprint" = whole board: Selected for Development,
+#                                Selected, Ready for Sprint, On Hold,
+#                                Rejected, Rejected / On Hold,
+#                                In Progress, plus SPRINT_DONE
+#   "Done in this sprint"      = Feedback, Submitted, Awaiting Feedback,
+#                                Done, Completed
+#   Excluded                   = Backlog, Stacked, Stacked Old,
+#                                Completed : Not Part of Sprint,
+#                                Completed Not Part of Sprint
+#
+# Rule B: INITIATIVE context (epic/milestone progress, Initiatives tab)
+#   "Done"     = Feedback, Submitted, Awaiting Feedback, Done, Completed,
+#                Completed : Not Part of Sprint,
+#                Completed Not Part of Sprint, Stacked, Stacked Old
+#   "Not done" = everything else
+#
+# These differ because:
+#   - A subtask completed outside its sprint still moves initiative
+#     progress forward, even though it does not contribute to THAT
+#     sprint's velocity.
+#   - A subtask in Feedback / Submitted / Awaiting Feedback is "done
+#     enough" for initiative progress (work is delivered, awaiting
+#     review) but is the last lap for sprint velocity, not the finish
+#     line.
+
+SPRINT_DONE_STATUSES = {
+    "Feedback", "Submitted", "Awaiting Feedback", "Done", "Completed",
+}
+SPRINT_IN_PROGRESS_STATUSES = {"In Progress"}
+SPRINT_COMMITTED_STATUSES = (
+    {
+        "Selected for Development", "Selected",
+        "Ready for Sprint",
+        "On Hold", "Rejected", "Rejected / On Hold",
+    }
+    | SPRINT_IN_PROGRESS_STATUSES
+    | SPRINT_DONE_STATUSES
+)
+# Backwards-compat aliases — older code in this file still references these.
+COMPLETED_STATUSES = SPRINT_DONE_STATUSES
+NOT_IN_SPRINT_STATUSES = {
+    "Backlog",
+    "Stacked", "Stacked Old",
+    "Completed: Not Part of Sprint",
+    "Completed : Not Part of Sprint",
+    "Completed Not Part of Sprint",
+}
+
+INITIATIVE_DONE_STATUSES = {
+    "Feedback", "Submitted", "Awaiting Feedback",
+    "Done", "Completed",
+    "Completed: Not Part of Sprint",
+    "Completed : Not Part of Sprint",
+    "Completed Not Part of Sprint",
+    "Stacked", "Stacked Old",
+}
 TEAM_LABELS = {"MSI_OPS", "MSI_EXP", "MSI_BRAND_CIM"}
 BOARD_ID = 7527
 BAU_EPIC = "MSI-1839"
@@ -58,7 +115,12 @@ STATUS_NORMALIZE: dict[str, str] = {
     "AWAITING FEEDBACK": "Awaiting Feedback",
     "FEEDBACK": "Feedback",
     "DONE": "Done",
+    "COMPLETED": "Completed",
     "COMPLETED: NOT PART OF SPRINT": "Completed: Not Part of Sprint",
+    "COMPLETED : NOT PART OF SPRINT": "Completed : Not Part of Sprint",
+    "COMPLETED NOT PART OF SPRINT": "Completed Not Part of Sprint",
+    "STACKED": "Stacked",
+    "STACKED OLD": "Stacked Old",
 }
 
 
@@ -142,11 +204,28 @@ def extract_issue(raw: dict) -> dict:
 
 
 def is_committed(status: str) -> bool:
-    return status not in NOT_IN_SPRINT_STATUSES
+    """Sprint-context: was this ticket committed to its sprint?
+    True for Selected for Development onwards. Excludes Backlog,
+    Ready for Sprint, On Hold/Rejected, Stacked, and the
+    out-of-sprint Completed* variants."""
+    return status in SPRINT_COMMITTED_STATUSES
 
 
 def is_completed(status: str) -> bool:
-    return status in COMPLETED_STATUSES
+    """Sprint-context: did this ticket complete IN its sprint?
+    True for Feedback, Submitted, Awaiting Feedback, Done, Completed.
+    Out-of-sprint Completed variants are excluded — they did not
+    contribute to that sprint's velocity."""
+    return status in SPRINT_DONE_STATUSES
+
+
+def is_initiative_done(status: str) -> bool:
+    """Initiative-context: did this work ever finish, regardless of sprint?
+    True for Done, Completed, both Completed-Not-Part-of-Sprint variants,
+    and Stacked / Stacked Old. Used for milestone and epic progress in
+    the Initiatives tab. Broader than is_completed(), which is
+    sprint-scoped."""
+    return status in INITIATIVE_DONE_STATUSES
 
 
 def assign_categories(issues: list[dict]) -> None:
@@ -265,10 +344,10 @@ def build_epic_progress(issues: list[dict]) -> list[dict]:
         for m in milestones:
             subs = subtask_by_parent.get(m["key"], [])
             total_subs = len(subs)
-            done_subs = sum(1 for s in subs if is_completed(s["status"]))
+            done_subs = sum(1 for s in subs if is_initiative_done(s["status"]))
             if total_subs:
                 m_progress = round(done_subs / total_subs, 3)
-            elif is_completed(m["status"]):
+            elif is_initiative_done(m["status"]):
                 m_progress = 1.0
             else:
                 m_progress = 0.0
