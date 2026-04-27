@@ -82,6 +82,11 @@ body{font-family:var(--font);background:var(--trv-warm-white);color:var(--trv-gr
 .dtable td{padding:6px 8px;border-bottom:1px solid var(--trv-gray-200)}
 .dtable tr:hover{background:var(--trv-gray-100)}
 .dtable tr:nth-child(even){background:var(--trv-gray-100)}
+.dtable tr.jrow{cursor:pointer;transition:background .12s}
+.dtable tr.jrow:hover{background:#E8F4FD}
+.dtable tr.jrow:hover td:first-child{color:var(--trv-blue);font-weight:600;text-decoration:underline}
+.alert-card.jrow{cursor:pointer}
+.alert-card.jrow:hover{background:#E8F4FD;border-color:var(--trv-blue)}
 
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(max-width:900px){.two-col{grid-template-columns:1fr}}
@@ -349,11 +354,30 @@ function legend(items){return '<div class="legend">'+items.map(i=>`<div class="l
 function kpi(label,value,color){return `<div class="kpi" style="border-top-color:${color}"><div class="kpi-l">${label}</div><div class="kpi-v">${value}</div></div>`}
 function kpiD(label,value,delta,color){return `<div class="kpi" style="border-top-color:${color}"><div class="kpi-l">${label}</div><div class="kpi-v">${value}</div><div class="kpi-d" style="color:${color}">${delta}</div></div>`}
 function st(t){return `<div class="stitle">${t}</div>`}
-function table(cols,rows){
+const JIRA_BROWSE='https://trivago.atlassian.net/browse/';
+function table(cols,rows,keyCol){
   if(!rows.length) return '';
   let h='<table class="dtable"><thead><tr>'+cols.map(c=>`<th>${c}</th>`).join('')+'</tr></thead><tbody>';
-  rows.forEach(r=>{h+='<tr>'+r.map(v=>`<td>${v}</td>`).join('')+'</tr>'});
+  rows.forEach(r=>{
+    if(typeof keyCol==='number' && r[keyCol]){
+      const k=String(r[keyCol]).replace(/<[^>]+>/g,'').trim();
+      h+=`<tr class="jrow" data-jkey="${k}" title="Open ${k} in Jira">`+r.map(v=>`<td>${v}</td>`).join('')+'</tr>';
+    } else {
+      h+='<tr>'+r.map(v=>`<td>${v}</td>`).join('')+'</tr>';
+    }
+  });
   return h+'</tbody></table>';
+}
+function bindJiraRows(){
+  document.querySelectorAll('tr.jrow[data-jkey],.alert-card.jrow[data-jkey]').forEach(el=>{
+    if(el._jBound) return;
+    el._jBound=true;
+    el.addEventListener('click',e=>{
+      if(e.target.closest('a')) return;
+      const k=el.getAttribute('data-jkey');
+      if(k) window.open(JIRA_BROWSE+k,'_blank','noopener');
+    });
+  });
 }
 
 function vbarTooltips(){
@@ -439,7 +463,7 @@ document.getElementById('tabs-bar').addEventListener('click',e=>{
   document.getElementById('tab-'+activeTab).classList.add('active');
   renderActive();
 });
-function renderActive(){if(R[activeTab])R[activeTab]();vbarTooltips()}
+function renderActive(){if(R[activeTab])R[activeTab]();vbarTooltips();bindJiraRows()}
 
 /* ── TAB 1: Sprint Overview ──────────────────────────────────────── */
 function rOverview(){
@@ -733,7 +757,7 @@ function rCompletion(){
       allIss.sort((a,b)=>{
         const order=i=>COMPLETED_SET.has(i.status)?2:IN_PROGRESS_SET.has(i.status)?1:0;
         return order(a)-order(b);
-      }).map(i=>[i.key,(i.summary||'').slice(0,50),i.assignee||'—',statusBadge(i.status),sp(i.story_points),TD[i.team]||i.team]));
+      }).map(i=>[i.key,(i.summary||'').slice(0,50),i.assignee||'—',statusBadge(i.status),sp(i.story_points),TD[i.team]||i.team]),0);
     h+='</div></div>';
   });
   el.innerHTML=h;
@@ -788,7 +812,7 @@ function rAlerts(){
     if(!list.length) return '';
     let g=st(title);
     list.forEach(a=>{
-      g+=`<div class="alert-card ${a.urgency==='overdue'?'overdue':''}"><div class="alert-icon">${icon}</div>
+      g+=`<div class="alert-card jrow ${a.urgency==='overdue'?'overdue':''}" data-jkey="${a.key}" title="Open ${a.key} in Jira"><div class="alert-icon">${icon}</div>
         <div class="alert-body"><div class="alert-title">${a.key}: ${(a.summary||'').slice(0,60)}</div>
         <div class="alert-meta">${a.assignee||'Unassigned'} · ${a.sprint} · ${TD[a.team]||a.team} · Due: ${a.due_date}</div></div>
         <span class="alert-badge ${a.urgency}">${a.urgency==='overdue'?Math.abs(a.daysLeft)+'d overdue':a.urgency==='today'?'Today':'In '+a.daysLeft+'d'}</span></div>`;
