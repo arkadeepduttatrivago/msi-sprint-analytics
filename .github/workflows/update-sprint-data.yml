@@ -12,7 +12,7 @@ on:
         type: string
   push:
     branches: [ main ]
-    paths: [ data/sprints.json, index.html ]
+    paths: [ data/sprints.json, data/initiative_summaries.json, index.html ]
 
 env:
   JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}

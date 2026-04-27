@@ -117,6 +117,30 @@ body{font-family:var(--font);background:var(--trv-warm-white);color:var(--trv-gr
 .init-meta{font-size:10px;color:var(--trv-gray-500);margin-bottom:6px}
 .init-milestones{display:none;margin-top:8px;border-top:1px solid var(--trv-gray-300);padding-top:8px}
 .init-card.open .init-milestones{display:block}
+
+/* AI Summary block (expandable) */
+.init-ai{display:none;margin-top:8px;background:#fff;border:1px solid var(--trv-gray-300);border-left:3px solid var(--trv-blue);border-radius:6px;padding:12px}
+.init-card.open .init-ai{display:block}
+.init-ai-header{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid var(--trv-gray-200)}
+.init-ai-tag{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--trv-blue)}
+.init-ai-tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--trv-blue)}
+.init-ai-headline{font-size:12px;font-weight:600;color:var(--trv-gray-900);flex:1;text-align:left}
+.init-ai-meta{font-size:9px;color:var(--trv-gray-500);font-style:italic;flex-shrink:0}
+.init-ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.init-ai-section{background:var(--trv-gray-100);border-radius:5px;padding:8px 10px}
+.init-ai-section.done{background:#E8F5EE;border-left:2px solid #008513}
+.init-ai-section.planned{background:#E8F4FD;border-left:2px solid var(--trv-blue)}
+.init-ai-section.overdue{background:#FCE8EC;border-left:2px solid var(--trv-red)}
+.init-ai-section.blockers{background:#FFF4E6;border-left:2px solid var(--trv-orange)}
+.init-ai-h{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px}
+.init-ai-section.done .init-ai-h{color:#008513}
+.init-ai-section.planned .init-ai-h{color:var(--trv-blue)}
+.init-ai-section.overdue .init-ai-h{color:var(--trv-red)}
+.init-ai-section.blockers .init-ai-h{color:var(--trv-orange)}
+.init-ai-list{margin:0;padding-left:14px;font-size:11px;color:var(--trv-gray-900);line-height:1.45}
+.init-ai-list li{margin-bottom:3px}
+.init-ai-empty{font-size:11px;color:var(--trv-gray-500);font-style:italic}
+@media (max-width:720px){.init-ai-grid{grid-template-columns:1fr}}
 .ms-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:11px}
 .ms-status{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 .ms-name{flex:1;color:var(--trv-gray-700)}
@@ -214,6 +238,7 @@ const NOT_SPRINT=new Set(['Backlog','Completed','Completed: Not Part of Sprint']
 
 let DATA=null,F={sprint:'active',team:'all',assignee:'all'};
 let SPRINT_TEAMS={};
+let INIT_SUMMARIES={},INIT_SUMMARIES_META={};
 
 /* ── Helpers ─────────────────────────────────────────────────────── */
 function buildSprintTeams(){
@@ -715,6 +740,31 @@ function rTeam(){
 }
 
 /* ── TAB 5: Initiatives ──────────────────────────────────────────── */
+function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+
+function aiSummaryBlock(epicKey){
+  const s=INIT_SUMMARIES[epicKey];
+  if(!s) return '';
+  const meta=INIT_SUMMARIES_META.generated_at?` · as of ${INIT_SUMMARIES_META.generated_at}`:'';
+  const sec=(cls,title,items)=>{
+    if(!items||!items.length) return `<div class="init-ai-section ${cls}"><div class="init-ai-h">${title}</div><div class="init-ai-empty">None.</div></div>`;
+    return `<div class="init-ai-section ${cls}"><div class="init-ai-h">${title}</div><ul class="init-ai-list">${items.map(i=>`<li>${escapeHtml(i)}</li>`).join('')}</ul></div>`;
+  };
+  return `<div class="init-ai" onclick="event.stopPropagation()">
+    <div class="init-ai-header">
+      <span class="init-ai-tag">AI Summary</span>
+      <span class="init-ai-headline">${escapeHtml(s.headline||'')}</span>
+      <span class="init-ai-meta">Robin${meta}</span>
+    </div>
+    <div class="init-ai-grid">
+      ${sec('done','What\u2019s done',s.done)}
+      ${sec('planned','What\u2019s planned',s.planned)}
+      ${sec('overdue','Overdue',s.overdue)}
+      ${sec('blockers','Critical blockers',s.blockers)}
+    </div>
+  </div>`;
+}
+
 function rInit(){
   const el=document.getElementById('tab-initiative');
   const tm=F.team==='all'?null:F.team;
@@ -738,6 +788,7 @@ function rInit(){
       </div>
       <div class="init-meta">${TD[e.team]||e.team} · ${doneMs}/${ms.length} milestones complete</div>
       <div class="pbar" style="height:12px"><div class="pfill" style="width:${Math.min(p*100,100)}%;background:${rc(p)}"></div><div class="ptxt" style="line-height:12px;font-size:9px">${pct(p)}</div></div>
+      ${aiSummaryBlock(e.epic_key)}
       <div class="init-milestones">`;
 
     ms.forEach(m=>{
@@ -891,6 +942,11 @@ function updateAlertBadge(){
 async function init(){
   try{DATA=await fetch('data/sprints.json?v='+Date.now()).then(r=>r.json())}
   catch(e){document.querySelector('.main').innerHTML='<div class="empty">Could not load sprints.json.</div>';return}
+  try{
+    const s=await fetch('data/initiative_summaries.json?v='+Date.now()).then(r=>r.json());
+    INIT_SUMMARIES=s.summaries||{};
+    INIT_SUMMARIES_META={generated_at:s.generated_at,generated_by:s.generated_by};
+  }catch(e){INIT_SUMMARIES={};INIT_SUMMARIES_META={}}
   buildSprintTeams();
   populateFilters();
   updateAlertBadge();

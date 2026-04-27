@@ -1,0 +1,324 @@
+{
+  "generated_at": "2026-04-27",
+  "generated_by": "Robin (trv-OS) via Cursor — based on milestone progress and due dates in sprints.json",
+  "summaries": {
+    "MSI-1703": {
+      "headline": "Cycle 0 → Cycle 1 transition: 6 milestones planned, none yet started.",
+      "done": [
+        "OKR scoped: 6 milestones defined with weights and owners across automation, governance, training and measurement."
+      ],
+      "planned": [
+        "M1 (Cursor adoption) and M4 (AI tools onboarding & governance docs) are the first two milestones to start, both due 30 Apr.",
+        "M2 (3 automation use cases per function) and M3 (≥3 personal skills per team member) follow in May."
+      ],
+      "overdue": [],
+      "blockers": [
+        "M1 (Cursor adoption) and M4 (Governance docs) due 30 Apr have 0 progress — at risk of slipping in the next 3 days.",
+        "M5 and M6 still have no subtasks scoped: cannot be tracked until subtasks are created."
+      ]
+    },
+    "MSI-1710": {
+      "headline": "Brand trust OKR scoped, baseline measurement is the critical next step.",
+      "done": [
+        "5 milestones defined with equal 20% weights covering sentiment baseline, trust model, primary research, pilots and go-live."
+      ],
+      "planned": [
+        "M1 (sentiment baseline) due 30 Apr is the gating milestone — needed before M2 (trust model) and downstream work.",
+        "M2 (trust model differentiating acquisition vs loyalty) due 18 May."
+      ],
+      "overdue": [],
+      "blockers": [
+        "M1 due 30 Apr is at 0% with 3 subtasks open — sentiment baseline at risk of slipping past month-end.",
+        "M3 onwards have no subtasks scoped yet — execution path beyond June not visible in the tracker."
+      ]
+    },
+    "MSI-1711": {
+      "headline": "Long-term iROAS framework: foundational milestone (M1) due 30 Apr, downstream work scoped but not started.",
+      "done": [
+        "6-milestone roadmap defined from baseline framework through to multi-media validation and education."
+      ],
+      "planned": [
+        "M1 (LT ROAS framework) due 30 Apr — foundational, gates everything downstream.",
+        "M2 (baseline decay & carryover) due 31 May."
+      ],
+      "overdue": [],
+      "blockers": [
+        "M1 has 6 subtasks open at 0% with 3 days to deadline — high risk of overdue carry into May.",
+        "M3–M6 have no subtasks scoped — downstream execution path not visible."
+      ]
+    },
+    "MSI-1712": {
+      "headline": "Booking-value prediction: M1 nearly done (80%) but already overdue; M2 at risk if M1 doesn't close fast.",
+      "done": [
+        "M1 baseline wMAPE design 80% complete — 4 of 5 subtasks done, last one in flight."
+      ],
+      "planned": [
+        "M2 (extend Bayesian c2b model with in-session features, 2pp wMAPE improvement) due 22 May, 5 subtasks scoped.",
+        "M3 (<15% wMAPE on 4-week horizon) due 5 Jun, M4 (production scoring pipeline) due 30 Jun."
+      ],
+      "overdue": [
+        "M1 (baseline wMAPE) due 24 Apr — 80% done, last subtask carrying over."
+      ],
+      "blockers": [
+        "M1 carry-over compresses M2 timeline (only 4 weeks instead of 5).",
+        "M2's 5 subtasks still at 0% — needs to start now to hit 22 May."
+      ]
+    },
+    "MSI-1713": {
+      "headline": "Price perception OKR scoped end-to-end; baseline (M1) and price test (M2) are the near-term priorities.",
+      "done": [
+        "6-milestone plan from baseline through to wave-1 launch and quarterly tracking."
+      ],
+      "planned": [
+        "M1 (baseline + competitive gap) due 30 Apr — pricing baseline.",
+        "M2 (price sensitivity test) and M3 (target market list) both due 31 May."
+      ],
+      "overdue": [],
+      "blockers": [
+        "M1 due 30 Apr has no subtasks — risk of being closed without traceable evidence.",
+        "M5 (wave-1 launches) and M6 (scaling recs) have no subtasks yet — H2 execution path not scoped."
+      ]
+    },
+    "MSI-1714": {
+      "headline": "Value-based bidding: M1 done, M2 at 50% — strongest momentum among OPS initiatives.",
+      "done": [
+        "M1 (acceptance criteria & governance) — 100% complete on 1 May target.",
+        "M2 (VBB signal computation workflow) at 50% — 3 of 6 subtasks done, well ahead of 1 Aug due."
+      ],
+      "planned": [
+        "M3 (VBB A/B test vs tCPA/tROAS) due 1 Aug.",
+        "M4 (uplift validation) and launches in Google/Meta (M5) follow."
+      ],
+      "overdue": [],
+      "blockers": [
+        "M3 onwards have no subtasks scoped — execution beyond M2 not yet broken down."
+      ]
+    },
+    "MSI-1715": {
+      "headline": "exRev/exRpCO/exRpV metrics: 9 milestones, only M1 in flight — heaviest plan, slowest start.",
+      "done": [
+        "Methodology scoped across 9 milestones from coefficient refresh through to company-wide rollout."
+      ],
+      "planned": [
+        "M1 (refresh coefficients from latest incrementality tests) at 33% — 1 of 3 subtasks done, due 30 Apr.",
+        "M2 (refresh rules & trigger framework) and M3 (campaign-level granularity) both due 30 May."
+      ],
+      "overdue": [],
+      "blockers": [
+        "M1 due 30 Apr at 33% — likely to carry into May.",
+        "M2 through M9 have no subtasks scoped — 8 of 9 milestones unscoped is the biggest plan-readiness gap on the board."
+      ]
+    },
+    "MSI-1716": {
+      "headline": "Creative experimentation velocity: 4 milestones, all clustered around early July deadline.",
+      "done": [
+        "OKR plan defined: test library, recommendations, H2H protocol, and velocity uplift target."
+      ],
+      "planned": [
+        "M1 (test library), M2 (recommendation doc) and M3 (H2H protocol) all due 3 Jul — parallel execution required.",
+        "M4 (≥20% velocity improvement on LTV, ≥10% on Digital) due 25 Sep."
+      ],
+      "overdue": [],
+      "blockers": [
+        "Three milestones with overlapping early-July deadlines — risk of capacity crunch in June.",
+        "All milestones at 0% with subtasks scoped — execution has not started."
+      ]
+    },
+    "MSI-1717": {
+      "headline": "Marketing Controller consolidation: M1 inventory done; deprecation plan (M2) is the gating next step.",
+      "done": [
+        "M1 (full MC inventory mapped — views, charts, explores catalogued) — 100% complete on 30 Apr target."
+      ],
+      "planned": [
+        "M2 (deprecation shortlist) due 8 May.",
+        "M3 (target architecture + semantic layer decision) due 5 Jun, M4 (≤0.5% discrepancy validation) due 26 Jun."
+      ],
+      "overdue": [],
+      "blockers": [
+        "M2 deprecation shortlist has 4 subtasks at 0% with 11 days to deadline — needs to start immediately.",
+        "M4–M6 have no subtasks — Q3 migration and governance work not scoped."
+      ]
+    },
+    "MSI-1718": {
+      "headline": "Creative rotation cycles: 5 milestones, work hasn't started, first deadline 19 Jun.",
+      "done": [
+        "OKR scoped: seasonality, deseasonalized VPMC ranking, wear-out model, validation, top-5 market rotation."
+      ],
+      "planned": [
+        "M1 (seasonality coefficients) due 19 Jun.",
+        "M2 (deseasonalized VPMC ranking via H2H) and M4 (wear-out validation on TV) due 28 Aug."
+      ],
+      "overdue": [],
+      "blockers": [
+        "All 5 milestones at 0% — execution has not started, and M1 has no subtasks scoped.",
+        "Seasonality model (M1) is foundational — slippage cascades through M2/M3/M4."
+      ]
+    },
+    "MSI-1719": {
+      "headline": "Concept testing 90% usage intent: all 4 milestones converge on a single 15 Sep deadline.",
+      "done": [
+        "4-milestone plan defined: tool accuracy verification, gap detection, ideation round, and automated workflow."
+      ],
+      "planned": [
+        "M1 (verify tool accuracy ≥70%) and M2 (gap detection between concept and final) — both due 15 Sep.",
+        "M3 (ideation round, ≥5 concepts) and M4 (automated content workflow) — both due 15 Sep."
+      ],
+      "overdue": [],
+      "blockers": [
+        "All 4 milestones share the 15 Sep deadline with no intermediate checkpoints — late-cycle compression risk.",
+        "M3 and M4 have no subtasks scoped."
+      ]
+    },
+    "MSI-1720": {
+      "headline": "iOS revenue integration: M1 reconciliation 50% done, downstream Looker work not started.",
+      "done": [
+        "M1 (AppsFlyer publisher-level iOS reconciliation) at 50% — 1 of 2 subtasks done, due 8 May."
+      ],
+      "planned": [
+        "M2 (cohort-level iOS/Android in Looker, daily refresh) due 22 May.",
+        "M3 (exROAS recalculation), M4 (target update) and M5 (governance docs) follow through July."
+      ],
+      "overdue": [],
+      "blockers": [
+        "M1 needs final subtask closed in 11 days — critical because M2 onwards depend on reconciled data.",
+        "M2–M5 have no subtasks scoped — May-July execution path not broken down."
+      ]
+    },
+    "MSI-1721": {
+      "headline": "Flashforward delivery: 6-milestone plan with 1 OVERDUE BAU stream task (MSI-1791); ML stream M1 complete.",
+      "done": [
+        "ML stream M1 (FF next-gen methodology designed) — 100% complete, 4 of 4 subtasks done."
+      ],
+      "planned": [
+        "ML stream M2 (QV model ≤15% WMAPE) due 7 Jun.",
+        "Automation M1 (AI-driven narrative + automated delivery) due 19 Jun.",
+        "ML stream M3 (RPQV model ≤10% WMAPE on 3-month horizon) due 5 Jul."
+      ],
+      "overdue": [
+        "BAU stream M2 (non-marketing financial impacts in FF pipeline) due 24 Apr — 0% complete, 1 subtask open."
+      ],
+      "blockers": [
+        "ML stream M2 (QV model) has 4 subtasks at 0% with 6 weeks to deadline — needs to start to avoid late-cycle pressure.",
+        "BAU stream M1 (MSI-2113) has 7 subtasks but 0% weight — work tracked but not counted toward initiative progress; needs reweighting decision."
+      ]
+    },
+    "MSI-1722": {
+      "headline": "trIC financial driver model: M1 OVERDUE at 50%, 6 downstream milestones unscoped.",
+      "done": [
+        "M1 (driver framework finalized & signed off with trIC and LST) — marked Done but at 50% subtask progress (1 of 2)."
+      ],
+      "planned": [
+        "M2 (Excel driver model adopted by trIC and trivago) due 8 May.",
+        "M3 (data pipeline for measurable metrics) due 5 Jun.",
+        "M4 (monitoring in analytics + Pigment) and M6 (markup-volume elasticity) both due 19 Jun."
+      ],
+      "overdue": [
+        "M1 (driver framework) due 24 Apr — flagged Done but 1 subtask still open."
+      ],
+      "blockers": [
+        "M1 status–progress mismatch: marked Done but only 50% of subtasks complete — needs reconciliation.",
+        "M2 has 4 subtasks at 0% with 11 days to deadline — high risk of slip.",
+        "M3–M7 have no subtasks scoped."
+      ]
+    },
+    "MSI-1723": {
+      "headline": "Experimentation framework: 8-milestone plan, all at 0%, first deadline mid-May.",
+      "done": [
+        "Comprehensive 8-milestone plan covering pipeline baseline, AI evaluation, geo causal methodology, testing guidebook, central library, AI agent, success-rate tracking, and failure-to-learn."
+      ],
+      "planned": [
+        "M1 (collect past tests + baseline pipeline velocity) due 15 May.",
+        "M3 (improve causal impact methodology for geo tests) due 22 May, M5 (centralized test library) due 26 Jun.",
+        "M4 (testing guidebook) due 3 Jul."
+      ],
+      "overdue": [],
+      "blockers": [
+        "All 8 milestones at 0% — execution has not started.",
+        "M1 has only 1 subtask but covers a baseline of past tests across all teams — likely under-scoped.",
+        "M2, M7 and M8 have no subtasks."
+      ]
+    },
+    "MSI-1724": {
+      "headline": "Media mix optimization: 6-milestone plan, all unscoped at subtask level, first deadline 8 May.",
+      "done": [
+        "6-milestone plan defined: value drivers alignment, modeling framework, marginal ROI, scenario planning, validation, leadership tool."
+      ],
+      "planned": [
+        "M1 (core value drivers aligned across FF & FC) — \"Ready for Sprint\", due 8 May.",
+        "M2 (cross-channel modeling framework — Robyn or alternative) due 22 May."
+      ],
+      "overdue": [],
+      "blockers": [
+        "All 6 milestones have no subtasks scoped — execution path not broken down.",
+        "M1 in \"Ready for Sprint\" but no subtasks — will be hard to track without breakdown."
+      ]
+    },
+    "MSI-1725": {
+      "headline": "Brand spend impact tracker: M1 methodology done, M2 partner selection is the immediate next step.",
+      "done": [
+        "M1 (trip tracker methodology aligned with stakeholders) — 100% complete, 1 of 1 subtasks done."
+      ],
+      "planned": [
+        "M2 (partner agency selection — cost/speed/depth balance) due 8 May.",
+        "M3 (design, setup and launch tracker with partner) due 1 Jun.",
+        "M4 (storage + visualization solution) due 1 Jul."
+      ],
+      "overdue": [],
+      "blockers": [
+        "M2 has 2 subtasks at 0% with 11 days to deadline — partner selection is on the critical path for M3 (1 Jun launch).",
+        "M4–M6 have no subtasks scoped."
+      ]
+    },
+    "MSI-1726": {
+      "headline": "MSI data product lifecycle / SLOs: 8-milestone plan, M1 at 50%, downstream largely unscoped.",
+      "done": [
+        "M1 (Tier 1 vs Tier 2 product classification) at 50% — 1 of 2 subtasks done, due 30 Apr."
+      ],
+      "planned": [
+        "M2 (core data products inventory with stakeholder mapping) due 15 May.",
+        "M3 (DQ baseline report for Tier 1 products) due 31 May, M4 (SLI/SLO/SLA framework) due 15 Jul."
+      ],
+      "overdue": [],
+      "blockers": [
+        "M1 needs second subtask closed in 3 days.",
+        "M2, M4–M8 have no subtasks scoped — over half of the initiative not broken down."
+      ]
+    },
+    "MSI-1839": {
+      "headline": "BAU bucket — Summer cycle: 17 of 30 items complete (57%), strong throughput on weekly tracking work.",
+      "done": [
+        "17 BAU items closed including weekly performance tracking (CW16/17 RoW, CW16/17 Dev. EUR), TV brief reviews, and FF chart tooltip updates.",
+        "Direct Response baseline calculation, Display test analysis, SEM incrementality test documentation all delivered."
+      ],
+      "planned": [
+        "CW18/19 performance tracking and SG meetings — \"Selected for Development\" / \"Ready for Sprint\".",
+        "Cycle 2 OKR planning, Displayr Data Upload Resolution pt. 2 & 3, MIM imagery variables in Looker.",
+        "Brief for 2 new global TV spots (featuring Klopp) — Part 2."
+      ],
+      "overdue": [
+        "MSI-1634 (Brand BAU Perf. Overview) due 27 Mar — month overdue, 0% progress."
+      ],
+      "blockers": [
+        "MSI-1634 is the only OVERDUE BAU item — needs decision on close, defer or reassign.",
+        "Several Backlog items with deadlines this week (Displayr pt. 2 due 30 Apr) at 0% — risk of pile-up."
+      ]
+    },
+    "MSI-1840": {
+      "headline": "Adhocs bucket — Summer cycle: 9 of 22 items complete (41%), one OVERDUE.",
+      "done": [
+        "9 adhoc analyses delivered including DOOH DE June 2026 setup, May MX CTV setup, FF RoW April, Innovid preliminary analysis, Meta Video Ads test."
+      ],
+      "planned": [
+        "Innovid Analysis (deeper), CTV DE regional test analysis, Display cut conversion impact, EHF impact analysis, DOOH proposal coordination — all in flight or queued for early May.",
+        "Amazon Europe planning, Dealfinder North star workshop, MSI Birthday."
+      ],
+      "overdue": [
+        "MSI-2055 (MSI Birthday) due 24 Apr — 0% progress, item pending close or rescheduling."
+      ],
+      "blockers": [
+        "Heavy clustering of \"Ready for Sprint\" items with 8 May deadlines — capacity check needed for next sprint commitment.",
+        "MSI-2055 needs disposition (it's an event, may simply need closing)."
+      ]
+    }
+  }
+}
