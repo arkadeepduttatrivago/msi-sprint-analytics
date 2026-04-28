@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T14:55:44.358900+00:00",
+  "last_updated": "2026-04-28T08:14:50.175774+00:00",
   "board_id": 7527,
   "board_name": "MSI_OKR_SUMMER_2026",
   "snapshots": [
@@ -3641,7 +3641,946 @@
       ]
     },
     {
-      "snapshot_date": "2026-04-27T14:55:44.358900+00:00",
+      "snapshot_date": "2026-04-28T08:14:50.175774+00:00",
+      "sprint_name": "BRAND_CIM_SPRINT_2",
+      "sprint_state": "active",
+      "sprint_start": "2026-04-27",
+      "sprint_end": "2026-05-08",
+      "metrics": {
+        "committed_sp": 20.5,
+        "completed_sp": 0,
+        "velocity": 0,
+        "committed_count": 15,
+        "completed_count": 0,
+        "commitment_ratio": 0.0,
+        "carry_over_sp": 20.5,
+        "carry_over_count": 15,
+        "unestimated_subtasks": 0,
+        "per_person": [
+          {
+            "assignee": "Diana Kazakova",
+            "committed_sp": 4.5,
+            "completed_sp": 0,
+            "count": 4
+          },
+          {
+            "assignee": "Maria Bonerz",
+            "committed_sp": 7.0,
+            "completed_sp": 0,
+            "count": 6
+          },
+          {
+            "assignee": "Sandra Knezevic",
+            "committed_sp": 7.0,
+            "completed_sp": 0,
+            "count": 4
+          },
+          {
+            "assignee": "Olga Ivleva",
+            "committed_sp": 2.0,
+            "completed_sp": 0,
+            "count": 1
+          }
+        ],
+        "per_team": [
+          {
+            "team": "MSI_BRAND_CIM",
+            "committed_sp": 20.5,
+            "completed_sp": 0
+          }
+        ]
+      },
+      "team_metrics": {
+        "MSI_BRAND_CIM": {
+          "committed_sp": 20.5,
+          "completed_sp": 0,
+          "velocity": 0,
+          "committed_count": 15,
+          "completed_count": 0,
+          "commitment_ratio": 0.0,
+          "carry_over_sp": 20.5,
+          "carry_over_count": 15,
+          "unestimated_subtasks": 0,
+          "per_person": [
+            {
+              "assignee": "Diana Kazakova",
+              "committed_sp": 4.5,
+              "completed_sp": 0,
+              "count": 4
+            },
+            {
+              "assignee": "Maria Bonerz",
+              "committed_sp": 7.0,
+              "completed_sp": 0,
+              "count": 6
+            },
+            {
+              "assignee": "Sandra Knezevic",
+              "committed_sp": 7.0,
+              "completed_sp": 0,
+              "count": 4
+            },
+            {
+              "assignee": "Olga Ivleva",
+              "committed_sp": 2.0,
+              "completed_sp": 0,
+              "count": 1
+            }
+          ],
+          "per_team": [
+            {
+              "team": "MSI_BRAND_CIM",
+              "committed_sp": 20.5,
+              "completed_sp": 0
+            }
+          ]
+        }
+      },
+      "issues": [
+        {
+          "key": "MSI-1727",
+          "summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1710",
+          "parent_summary": "Increase trivago brand trust through evidence-based initiatives and sentiment monitoring",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 4.0,
+          "due_date": "2026-04-30",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1728",
+          "summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1710",
+          "parent_summary": "Increase trivago brand trust through evidence-based initiatives and sentiment monitoring",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 4.0,
+          "due_date": "2026-05-18",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1744",
+          "summary": "M2: Price sensitivity test concluded",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1713",
+          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 4.0,
+          "due_date": "2026-05-31",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1745",
+          "summary": "M3: Target market list",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1713",
+          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 3.0,
+          "due_date": "2026-05-31",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1746",
+          "summary": "M4: Price-focused communication strategy per test market",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1713",
+          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-06-30",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1779",
+          "summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1719",
+          "parent_summary": "Achieve 90% usage intent in Concept testing vs YHTC",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-09-15",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1780",
+          "summary": "M2: Detect potential gaps between concept stage & final creative asset, quantify gap on usage intent, decompose by drivers",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1719",
+          "parent_summary": "Achieve 90% usage intent in Concept testing vs YHTC",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-09-15",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1819",
+          "summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1725",
+          "parent_summary": "Measure impact of Brand spend on brand health KPIs across segments",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 4.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1820",
+          "summary": "M3: Design, setup and launch the tracker with the partner agency by 1st of June to capture summer demand",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1725",
+          "parent_summary": "Measure impact of Brand spend on brand health KPIs across segments",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.5,
+          "due_date": "2026-06-01",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1844",
+          "summary": "initiate first communication with at least 3 agencies ",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1819",
+          "parent_summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.0,
+          "due_date": "2026-04-22",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1845",
+          "summary": "Review proposals and select a partner agency ",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1819",
+          "parent_summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1847",
+          "summary": "First Draft: Design price sensitivity test (incl. vendor selection) - pt.1",
+          "status": "Completed Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Olga Ivleva",
+          "parent_key": "MSI-1744",
+          "parent_summary": "M2: Price sensitivity test concluded",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.0,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1848",
+          "summary": "First evaluation of potential test markets (shortlist of 5 markets) - Part 1",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1745",
+          "parent_summary": "M3: Target market list",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1849",
+          "summary": "Create list of new deals-focused mkt claims",
+          "status": "Completed Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1746",
+          "parent_summary": "M4: Price-focused communication strategy per test market",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1874",
+          "summary": "Research ",
+          "status": "Completed Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1727",
+          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.5,
+          "due_date": "2026-04-17",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1876",
+          "summary": "Strategy Paper Part 1",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1727",
+          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1878",
+          "summary": "Gloabl TV Brief Review and Sign Off",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Request",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-1879",
+          "summary": "Research & Data Colection Part 1",
+          "status": "Completed Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1728",
+          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2018",
+          "summary": "Retesting final creatives US",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1779",
+          "parent_summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2019",
+          "summary": "Testing animatic + final TV spot (DE)",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1780",
+          "parent_summary": "M2: Detect potential gaps between concept stage & final creative asset, quantify gap on usage intent, decompose by drivers",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2024",
+          "summary": "Retesting final creatives ES",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1779",
+          "parent_summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2049",
+          "summary": "First evaluation of potential test markets (shortlist of 5 markets) - Part 2",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1745",
+          "parent_summary": "M3: Target market list",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2050",
+          "summary": "Brief for 2 new global TV spots (featuring Klopp) - Part 2",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2051",
+          "summary": "JP: Brief for 2 new TV spots - Part 2",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-07",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2052",
+          "summary": "Brief for new deals-based MKT claims",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1746",
+          "parent_summary": "M4: Price-focused communication strategy per test market",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2057",
+          "summary": "Strategy Paper Part 2",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1727",
+          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2058",
+          "summary": "Research & Data Colection Part 2",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1728",
+          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 3.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2063",
+          "summary": "Run creative analysis test",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2064",
+          "summary": "Dealfinder North star workshop",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.25,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2065",
+          "summary": "Product council",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.25,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2066",
+          "summary": "WC Campaign Management",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2067",
+          "summary": "Cycle 2 Project Planning, OKR review, cursor skill development",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2068",
+          "summary": "First Draft: Design price sensitivity test ( execution) pt. 2",
+          "status": "Ready for Sprint",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Olga Ivleva",
+          "parent_key": "MSI-1744",
+          "parent_summary": "M2: Price sensitivity test concluded",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2111",
+          "summary": "agency meeting kick off prep",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1820",
+          "parent_summary": "M3: Design, setup and launch the tracker with the partner agency by 1st of June to capture summer demand",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2136",
+          "summary": "Small Improvements & OKR planning",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-07",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "adhoc"
+        }
+      ]
+    },
+    {
+      "snapshot_date": "2026-04-28T08:14:50.175774+00:00",
       "sprint_name": "MSI_OPS_SPRINT_2",
       "sprint_state": "active",
       "sprint_start": "2026-04-27",
@@ -4579,8 +5518,8 @@
         {
           "key": "MSI-2004",
           "summary": "M2.1: Data Analysis for Design Decisions",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
+          "status": "In Progress",
+          "status_category": "In Progress",
           "issue_type": "Sub-task",
           "hierarchy_level": -1,
           "assignee": "Marzieh Parsa",
@@ -5322,8 +6261,8 @@
         {
           "key": "MSI-2108",
           "summary": "Refine theme + destination Bayesian",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
+          "status": "In Progress",
+          "status_category": "In Progress",
           "issue_type": "Sub-task",
           "hierarchy_level": -1,
           "assignee": "Mario Alberto da Silveira Dib",
@@ -5439,26 +6378,26 @@
       ]
     },
     {
-      "snapshot_date": "2026-04-27T14:55:44.358900+00:00",
+      "snapshot_date": "2026-04-28T08:14:50.175774+00:00",
       "sprint_name": "MSI_EXP_SPRINT_2",
       "sprint_state": "active",
       "sprint_start": "2026-04-27",
       "sprint_end": "2026-05-08",
       "metrics": {
-        "committed_sp": 25.5,
-        "completed_sp": 0,
-        "velocity": 0,
+        "committed_sp": 23.5,
+        "completed_sp": 0.3,
+        "velocity": 0.3,
         "committed_count": 20,
-        "completed_count": 0,
-        "commitment_ratio": 0.0,
-        "carry_over_sp": 25.5,
-        "carry_over_count": 20,
+        "completed_count": 1,
+        "commitment_ratio": 0.013,
+        "carry_over_sp": 23.2,
+        "carry_over_count": 19,
         "unestimated_subtasks": 0,
         "per_person": [
           {
             "assignee": "Pavel Tobengauz",
-            "committed_sp": 11.3,
-            "completed_sp": 0,
+            "committed_sp": 9.3,
+            "completed_sp": 0.3,
             "count": 8
           },
           {
@@ -5477,27 +6416,27 @@
         "per_team": [
           {
             "team": "MSI_EXP",
-            "committed_sp": 25.5,
-            "completed_sp": 0
+            "committed_sp": 23.5,
+            "completed_sp": 0.3
           }
         ]
       },
       "team_metrics": {
         "MSI_EXP": {
-          "committed_sp": 25.5,
-          "completed_sp": 0,
-          "velocity": 0,
+          "committed_sp": 23.5,
+          "completed_sp": 0.3,
+          "velocity": 0.3,
           "committed_count": 20,
-          "completed_count": 0,
-          "commitment_ratio": 0.0,
-          "carry_over_sp": 25.5,
-          "carry_over_count": 20,
+          "completed_count": 1,
+          "commitment_ratio": 0.013,
+          "carry_over_sp": 23.2,
+          "carry_over_count": 19,
           "unestimated_subtasks": 0,
           "per_person": [
             {
               "assignee": "Pavel Tobengauz",
-              "committed_sp": 11.3,
-              "completed_sp": 0,
+              "committed_sp": 9.3,
+              "completed_sp": 0.3,
               "count": 8
             },
             {
@@ -5516,8 +6455,8 @@
           "per_team": [
             {
               "team": "MSI_EXP",
-              "committed_sp": 25.5,
-              "completed_sp": 0
+              "committed_sp": 23.5,
+              "completed_sp": 0.3
             }
           ]
         }
@@ -5693,7 +6632,7 @@
         },
         {
           "key": "MSI-1853",
-          "summary": "Define test library schema and metric requirements per channel",
+          "summary": "Define test library schema and metric requirements for geo tests",
           "status": "Ready for Sprint",
           "status_category": "To Do",
           "issue_type": "Sub-task",
@@ -5706,7 +6645,7 @@
             "MSI_OKRS_2026"
           ],
           "team": "MSI_EXP",
-          "story_points": 3.0,
+          "story_points": 1.0,
           "due_date": "2026-05-08",
           "resolution_date": null,
           "sprint_name": "MSI_EXP_SPRINT_2",
@@ -6222,7 +7161,7 @@
         {
           "key": "MSI-2028",
           "summary": "Analyze CTV DE regional test",
-          "status": "Ready for Sprint",
+          "status": "Feedback",
           "status_category": "To Do",
           "issue_type": "Task",
           "hierarchy_level": 0,
@@ -6532,945 +7471,30 @@
           "sprint_start": "2026-04-27",
           "sprint_end": "2026-05-08",
           "category": "bau"
-        }
-      ]
-    },
-    {
-      "snapshot_date": "2026-04-27T14:55:44.358900+00:00",
-      "sprint_name": "BRAND_CIM_SPRINT_2",
-      "sprint_state": "active",
-      "sprint_start": "2026-04-27",
-      "sprint_end": "2026-05-08",
-      "metrics": {
-        "committed_sp": 20.5,
-        "completed_sp": 0,
-        "velocity": 0,
-        "committed_count": 15,
-        "completed_count": 0,
-        "commitment_ratio": 0.0,
-        "carry_over_sp": 20.5,
-        "carry_over_count": 15,
-        "unestimated_subtasks": 0,
-        "per_person": [
-          {
-            "assignee": "Diana Kazakova",
-            "committed_sp": 4.5,
-            "completed_sp": 0,
-            "count": 4
-          },
-          {
-            "assignee": "Maria Bonerz",
-            "committed_sp": 7.0,
-            "completed_sp": 0,
-            "count": 6
-          },
-          {
-            "assignee": "Sandra Knezevic",
-            "committed_sp": 7.0,
-            "completed_sp": 0,
-            "count": 4
-          },
-          {
-            "assignee": "Olga Ivleva",
-            "committed_sp": 2.0,
-            "completed_sp": 0,
-            "count": 1
-          }
-        ],
-        "per_team": [
-          {
-            "team": "MSI_BRAND_CIM",
-            "committed_sp": 20.5,
-            "completed_sp": 0
-          }
-        ]
-      },
-      "team_metrics": {
-        "MSI_BRAND_CIM": {
-          "committed_sp": 20.5,
-          "completed_sp": 0,
-          "velocity": 0,
-          "committed_count": 15,
-          "completed_count": 0,
-          "commitment_ratio": 0.0,
-          "carry_over_sp": 20.5,
-          "carry_over_count": 15,
-          "unestimated_subtasks": 0,
-          "per_person": [
-            {
-              "assignee": "Diana Kazakova",
-              "committed_sp": 4.5,
-              "completed_sp": 0,
-              "count": 4
-            },
-            {
-              "assignee": "Maria Bonerz",
-              "committed_sp": 7.0,
-              "completed_sp": 0,
-              "count": 6
-            },
-            {
-              "assignee": "Sandra Knezevic",
-              "committed_sp": 7.0,
-              "completed_sp": 0,
-              "count": 4
-            },
-            {
-              "assignee": "Olga Ivleva",
-              "committed_sp": 2.0,
-              "completed_sp": 0,
-              "count": 1
-            }
-          ],
-          "per_team": [
-            {
-              "team": "MSI_BRAND_CIM",
-              "committed_sp": 20.5,
-              "completed_sp": 0
-            }
-          ]
-        }
-      },
-      "issues": [
-        {
-          "key": "MSI-1727",
-          "summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1710",
-          "parent_summary": "Increase trivago brand trust through evidence-based initiatives and sentiment monitoring",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 4.0,
-          "due_date": "2026-04-30",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
         },
         {
-          "key": "MSI-1728",
-          "summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
+          "key": "MSI-2145",
+          "summary": "Define test library schema and metric requirements per channel for digital",
           "status": "Backlog",
           "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1710",
-          "parent_summary": "Increase trivago brand trust through evidence-based initiatives and sentiment monitoring",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 4.0,
-          "due_date": "2026-05-18",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1744",
-          "summary": "M2: Price sensitivity test concluded",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1713",
-          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 4.0,
-          "due_date": "2026-05-31",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1745",
-          "summary": "M3: Target market list",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1713",
-          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 3.0,
-          "due_date": "2026-05-31",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1746",
-          "summary": "M4: Price-focused communication strategy per test market",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1713",
-          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-06-30",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1779",
-          "summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1719",
-          "parent_summary": "Achieve 90% usage intent in Concept testing vs YHTC",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-09-15",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1780",
-          "summary": "M2: Detect potential gaps between concept stage & final creative asset, quantify gap on usage intent, decompose by drivers",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1719",
-          "parent_summary": "Achieve 90% usage intent in Concept testing vs YHTC",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-09-15",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1819",
-          "summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1725",
-          "parent_summary": "Measure impact of Brand spend on brand health KPIs across segments",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 4.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1820",
-          "summary": "M3: Design, setup and launch the tracker with the partner agency by 1st of June to capture summer demand",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1725",
-          "parent_summary": "Measure impact of Brand spend on brand health KPIs across segments",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.5,
-          "due_date": "2026-06-01",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1844",
-          "summary": "initiate first communication with at least 3 agencies ",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
           "issue_type": "Sub-task",
           "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1819",
-          "parent_summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1808",
+          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
           "labels": [
-            "MSI_BRAND_CIM",
+            "MSI_EXP",
             "MSI_OKRS_2026"
           ],
-          "team": "MSI_BRAND_CIM",
+          "team": "MSI_EXP",
           "story_points": 2.0,
-          "due_date": "2026-04-22",
+          "due_date": "2026-05-22",
           "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_name": "MSI_EXP_SPRINT_2",
           "sprint_state": "active",
           "sprint_start": "2026-04-27",
           "sprint_end": "2026-05-08",
           "category": "okr"
-        },
-        {
-          "key": "MSI-1845",
-          "summary": "Review proposals and select a partner agency ",
-          "status": "In Progress",
-          "status_category": "In Progress",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1819",
-          "parent_summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1847",
-          "summary": "First Draft: Design price sensitivity test (incl. vendor selection) - pt.1",
-          "status": "Completed Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Olga Ivleva",
-          "parent_key": "MSI-1744",
-          "parent_summary": "M2: Price sensitivity test concluded",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.0,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1848",
-          "summary": "First evaluation of potential test markets (shortlist of 5 markets) - Part 1",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1745",
-          "parent_summary": "M3: Target market list",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1849",
-          "summary": "Create list of new deals-focused mkt claims",
-          "status": "Completed Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1746",
-          "parent_summary": "M4: Price-focused communication strategy per test market",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1874",
-          "summary": "Research ",
-          "status": "Completed Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1727",
-          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.5,
-          "due_date": "2026-04-17",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1876",
-          "summary": "Strategy Paper Part 1",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1727",
-          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1878",
-          "summary": "Gloabl TV Brief Review and Sign Off",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Request",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-1879",
-          "summary": "Research & Data Colection Part 1",
-          "status": "Completed Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1728",
-          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2018",
-          "summary": "Retesting final creatives US",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1779",
-          "parent_summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2019",
-          "summary": "Testing animatic + final TV spot (DE)",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1780",
-          "parent_summary": "M2: Detect potential gaps between concept stage & final creative asset, quantify gap on usage intent, decompose by drivers",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2024",
-          "summary": "Retesting final creatives ES",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1779",
-          "parent_summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2049",
-          "summary": "First evaluation of potential test markets (shortlist of 5 markets) - Part 2",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1745",
-          "parent_summary": "M3: Target market list",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2050",
-          "summary": "Brief for 2 new global TV spots (featuring Klopp) - Part 2",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2051",
-          "summary": "JP: Brief for 2 new TV spots - Part 2",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-07",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2052",
-          "summary": "Brief for new deals-based MKT claims",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1746",
-          "parent_summary": "M4: Price-focused communication strategy per test market",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2057",
-          "summary": "Strategy Paper Part 2",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1727",
-          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2058",
-          "summary": "Research & Data Colection Part 2",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1728",
-          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 3.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2063",
-          "summary": "Run creative analysis test",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2064",
-          "summary": "Dealfinder North star workshop",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.25,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2065",
-          "summary": "Product council",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.25,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2066",
-          "summary": "WC Campaign Management",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2067",
-          "summary": "Cycle 2 Project Planning, OKR review, cursor skill development",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2068",
-          "summary": "First Draft: Design price sensitivity test ( execution) pt. 2",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Olga Ivleva",
-          "parent_key": "MSI-1744",
-          "parent_summary": "M2: Price sensitivity test concluded",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2111",
-          "summary": "agency meeting kick off prep",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1820",
-          "parent_summary": "M3: Design, setup and launch the tracker with the partner agency by 1st of June to capture summer demand",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2136",
-          "summary": "Small Improvements & OKR planning",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-07",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "adhoc"
         }
       ]
     }
@@ -8554,7 +8578,7 @@
           "status": "Backlog",
           "story_points": 19.0,
           "due_date": "2026-06-26",
-          "total_subtasks": 7,
+          "total_subtasks": 8,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
           "weight": 0.25
@@ -9200,8 +9224,8 @@
       "summary": "Adhocs_MSI_OKR_Summer",
       "team": "Unknown",
       "total_milestones": 22,
-      "done_milestones": 9,
-      "progress": 0.4095,
+      "done_milestones": 10,
+      "progress": 0.455,
       "milestones": [
         {
           "key": "MSI-1673",
@@ -9305,12 +9329,12 @@
         {
           "key": "MSI-2028",
           "summary": "Analyze CTV DE regional test",
-          "status": "Ready for Sprint",
+          "status": "Feedback",
           "story_points": 0.3,
           "due_date": "2026-04-29",
           "total_subtasks": 0,
           "done_subtasks": 0,
-          "milestone_progress": 0.0,
+          "milestone_progress": 1.0,
           "weight": 0.0455
         },
         {
@@ -13046,7 +13070,7 @@
     },
     {
       "key": "MSI-1853",
-      "summary": "Define test library schema and metric requirements per channel",
+      "summary": "Define test library schema and metric requirements for geo tests",
       "status": "Ready for Sprint",
       "status_category": "To Do",
       "issue_type": "Sub-task",
@@ -13059,7 +13083,7 @@
         "MSI_OKRS_2026"
       ],
       "team": "MSI_EXP",
-      "story_points": 3.0,
+      "story_points": 1.0,
       "due_date": "2026-05-08",
       "resolution_date": null,
       "sprint_name": "MSI_EXP_SPRINT_2",
@@ -15470,8 +15494,8 @@
     {
       "key": "MSI-2004",
       "summary": "M2.1: Data Analysis for Design Decisions",
-      "status": "Ready for Sprint",
-      "status_category": "To Do",
+      "status": "In Progress",
+      "status_category": "In Progress",
       "issue_type": "Sub-task",
       "hierarchy_level": -1,
       "assignee": "Marzieh Parsa",
@@ -16024,7 +16048,7 @@
     {
       "key": "MSI-2028",
       "summary": "Analyze CTV DE regional test",
-      "status": "Ready for Sprint",
+      "status": "Feedback",
       "status_category": "To Do",
       "issue_type": "Task",
       "hierarchy_level": 0,
@@ -17392,8 +17416,8 @@
     {
       "key": "MSI-2108",
       "summary": "Refine theme + destination Bayesian",
-      "status": "Ready for Sprint",
-      "status_category": "To Do",
+      "status": "In Progress",
+      "status_category": "In Progress",
       "issue_type": "Sub-task",
       "hierarchy_level": -1,
       "assignee": "Mario Alberto da Silveira Dib",
@@ -17594,7 +17618,7 @@
         "MSI_OPS"
       ],
       "team": "MSI_OPS",
-      "story_points": 0.0,
+      "story_points": 5.0,
       "due_date": "2026-05-10",
       "resolution_date": null,
       "sprint_name": "MSI_OPS_SPRINT_1",
@@ -17618,7 +17642,7 @@
         "MSI_OPS"
       ],
       "team": "MSI_OPS",
-      "story_points": 0.0,
+      "story_points": 3.0,
       "due_date": "2026-05-10",
       "resolution_date": null,
       "sprint_name": "MSI_OPS_SPRINT_1",
@@ -17642,7 +17666,7 @@
         "MSI_OPS"
       ],
       "team": "MSI_OPS",
-      "story_points": 0.0,
+      "story_points": 5.0,
       "due_date": "2026-05-22",
       "resolution_date": null,
       "sprint_name": "MSI_OPS_SPRINT_1",
@@ -17666,7 +17690,7 @@
         "MSI_OPS"
       ],
       "team": "MSI_OPS",
-      "story_points": 0.0,
+      "story_points": 8.0,
       "due_date": "2026-06-07",
       "resolution_date": null,
       "sprint_name": "MSI_OPS_SPRINT_1",
@@ -17690,7 +17714,7 @@
         "MSI_OPS"
       ],
       "team": "MSI_OPS",
-      "story_points": 0.0,
+      "story_points": 8.0,
       "due_date": "2026-06-21",
       "resolution_date": null,
       "sprint_name": null,
@@ -17714,7 +17738,7 @@
         "MSI_OPS"
       ],
       "team": "MSI_OPS",
-      "story_points": 0.0,
+      "story_points": 5.0,
       "due_date": "2026-07-05",
       "resolution_date": null,
       "sprint_name": null,
@@ -17738,7 +17762,7 @@
         "MSI_OPS"
       ],
       "team": "MSI_OPS",
-      "story_points": 0.0,
+      "story_points": 5.0,
       "due_date": "2026-07-05",
       "resolution_date": null,
       "sprint_name": null,
@@ -18011,6 +18035,30 @@
       "sprint_start": "2026-04-27",
       "sprint_end": "2026-05-08",
       "category": "bau"
+    },
+    {
+      "key": "MSI-2145",
+      "summary": "Define test library schema and metric requirements per channel for digital",
+      "status": "Backlog",
+      "status_category": "To Do",
+      "issue_type": "Sub-task",
+      "hierarchy_level": -1,
+      "assignee": "Pavel Tobengauz",
+      "parent_key": "MSI-1808",
+      "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
+      "labels": [
+        "MSI_EXP",
+        "MSI_OKRS_2026"
+      ],
+      "team": "MSI_EXP",
+      "story_points": 2.0,
+      "due_date": "2026-05-22",
+      "resolution_date": null,
+      "sprint_name": "MSI_EXP_SPRINT_2",
+      "sprint_state": "active",
+      "sprint_start": "2026-04-27",
+      "sprint_end": "2026-05-08",
+      "category": "okr"
     }
   ]
 }
