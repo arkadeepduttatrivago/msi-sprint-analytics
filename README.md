@@ -14,7 +14,10 @@ Static HTML dashboard for MSI sprint tracking — velocity, team breakdown, per-
 
 ### Automated (GitHub Actions)
 
-A scheduled workflow runs every day at **09:00 CET (07:00 UTC)** to keep the dashboard fresh.
+A scheduled workflow checks multiple times before **09:00 Europe/Berlin**
+to keep the dashboard fresh. It runs at `06:15`, `06:35`, `06:55`,
+`07:15`, `07:35`, and `07:55` UTC. A freshness guard lets the first
+successful run per day update the data; later scheduled runs exit cleanly.
 
 For out-of-band manual refreshes (e.g. before a stakeholder review), use the trv-OS command `/git-update-sprint-numbers` from Cursor — it fetches Jira, rebuilds `data/sprints.json`, and pushes to `main` so Pages redeploys immediately.
 

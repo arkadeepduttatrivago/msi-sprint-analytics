@@ -2,8 +2,11 @@ name: Update Sprint Data & Deploy
 
 on:
   schedule:
-    # Every day at 07:00 UTC (09:00 CET)
-    - cron: "0 7 * * *"
+    # Multiple pre-09:00 Europe/Berlin attempts.
+    # 06:15/35/55 UTC covers summer time; 07:15/35/55 covers winter time.
+    # The freshness guard below lets only the first successful run per day
+    # refresh data; later scheduled attempts exit cleanly.
+    - cron: "15,35,55 6,7 * * *"
   workflow_dispatch:
     inputs:
       jql_override:
@@ -19,12 +22,18 @@ env:
   JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
   JIRA_CLOUD_ID: ${{ secrets.JIRA_CLOUD_ID }}
 
+concurrency:
+  group: sprint-data-refresh
+  cancel-in-progress: false
+
 jobs:
   fetch-and-update:
     runs-on: ubuntu-latest
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     permissions:
       contents: write
+    outputs:
+      should_deploy: ${{ steps.freshness.outputs.should_deploy }}
 
     steps:
       - name: Checkout repo
@@ -38,15 +47,44 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Check whether data was already refreshed today
+        id: freshness
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          data = json.loads(Path("data/sprints.json").read_text(encoding="utf-8"))
+          last_updated = data.get("last_updated", "")
+          try:
+              last_dt = datetime.fromisoformat(last_updated.replace("Z", "+00:00"))
+              last_date = last_dt.astimezone(timezone.utc).date().isoformat()
+          except ValueError:
+              last_date = ""
+
+          today = datetime.now(timezone.utc).date().isoformat()
+          already_refreshed = last_date == today
+          should_deploy = os.environ.get("GITHUB_EVENT_NAME") != "schedule" or not already_refreshed
+
+          print(f"last_updated={last_updated}")
+          print(f"already_refreshed={str(already_refreshed).lower()}")
+          print(f"should_deploy={str(should_deploy).lower()}")
+          PY
+
       - name: Fetch Jira data
+        if: steps.freshness.outputs.should_deploy == 'true'
         run: python scripts/fetch_jira.py
         env:
           JQL_OVERRIDE: ${{ github.event.inputs.jql_override || '' }}
 
       - name: Build sprint data
+        if: steps.freshness.outputs.should_deploy == 'true'
         run: python scripts/build_data.py
 
       - name: Commit and push updated data
+        if: steps.freshness.outputs.should_deploy == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -61,7 +99,7 @@ jobs:
   deploy-pages:
     runs-on: ubuntu-latest
     needs: [ fetch-and-update ]
-    if: always() && !failure() && !cancelled()
+    if: always() && !failure() && !cancelled() && (github.event_name == 'push' || needs.fetch-and-update.outputs.should_deploy == 'true')
     permissions:
       pages: write
       id-token: write
