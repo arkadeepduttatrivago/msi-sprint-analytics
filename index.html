@@ -448,11 +448,25 @@ function stackedArea(series,opts){
   for(let b=0;b<bandCount;b++){
     const top=cumByPoint.map(c=>c.stops[b]);
     const bot=b===0?cumByPoint.map(()=>0):cumByPoint.map(c=>c.stops[b-1]);
-    layers.push(`<polygon points="${polygon(top,bot)}" fill="${series[0].bands[b].color}" stroke="${series[0].bands[b].color}" stroke-width="0.5"/>`);
+    layers.push(`<polygon points="${polygon(top,bot)}" fill="${series[0].bands[b].color}" stroke="${series[0].bands[b].color}" stroke-width="0.5" pointer-events="none"/>`);
   }
-  // Committed total line on top
+  // Committed total line + dots on top
   const linePath='M'+series.map((s,i)=>`${xs(i).toFixed(1)},${ys(s.committed||0).toFixed(1)}`).join(' L');
-  const dots=series.map((s,i)=>`<circle cx="${xs(i).toFixed(1)}" cy="${ys(s.committed||0).toFixed(1)}" r="3" fill="${C.BLUE}"><title>${s.name}: ${(s.committed||0).toFixed(1)} SP committed</title></circle>`).join('');
+  const lineSummary=series.map(s=>`${s.name}: ${(s.committed||0).toFixed(1)} SP`).join('\n');
+  const dots=series.map((s,i)=>{
+    const sprintBreakdown=[`${s.name}${s.state?' ('+s.state+')':''}`,`Committed: ${(s.committed||0).toFixed(1)} SP`]
+      .concat(s.bands.map(b=>`${b.name}: ${(b.value||0).toFixed(1)}`)).join('\n');
+    return `<circle cx="${xs(i).toFixed(1)}" cy="${ys(s.committed||0).toFixed(1)}" r="5" fill="${C.BLUE}" stroke="#fff" stroke-width="1.5"><title>${sprintBreakdown}</title></circle>`;
+  }).join('');
+  // Per-sprint invisible vertical hover bands - full breakdown on hover even
+  // when a band has zero height at that x.
+  const colW=series.length>1?pw/(series.length-1):pw;
+  const hoverBands=series.map((s,i)=>{
+    const x=xs(i)-colW/2;
+    const breakdown=[`${s.name}${s.state?' ('+s.state+')':''}`,`Committed: ${(s.committed||0).toFixed(1)} SP`]
+      .concat(s.bands.map(b=>`${b.name}: ${(b.value||0).toFixed(1)}`)).join('\n');
+    return `<rect x="${x.toFixed(1)}" y="${padT}" width="${colW.toFixed(1)}" height="${ph}" fill="transparent" pointer-events="all"><title>${breakdown}</title></rect>`;
+  }).join('');
   // Y grid lines
   const step=Math.max(10,Math.ceil(maxY/5/10)*10);
   const yLines=[];
@@ -473,7 +487,8 @@ function stackedArea(series,opts){
   return `<div style="width:100%;overflow-x:auto"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" style="width:100%;height:340px;display:block">
     ${yLines.join('')}
     ${layers.join('')}
-    <path d="${linePath}" stroke="${C.BLUE}" stroke-width="2" fill="none"/>
+    <path d="${linePath}" stroke="${C.BLUE}" stroke-width="2" fill="none" pointer-events="none"/>
+    ${hoverBands}
     ${dots}
     ${xLabels}
     ${stateMarks}
@@ -644,7 +659,7 @@ function rOverview(){
   }
   h+='</div>';
 
-  h+=st('Sprint trend - committed, completed, at-risk, BAU & Adhoc');
+  h+=st('Sprint trend - committed, completed, BAU & Adhoc');
   // Build chronological series across ALL sprints for selected team filter so
   // closed sprints sit on the left and active on the right. This is the
   // stacked-area view replacing the previous grouped bars.
@@ -655,13 +670,11 @@ function rOverview(){
   const seriesData=seriesSnaps.map(s=>{
     const m=sprintMetrics(s.sprint_name,tm);
     const cm=catMetrics(s.sprint_name,tm);
-    const atRisk=Math.max(0,m.committed_sp-m.completed_sp-cm.bau-cm.adhoc);
     return{
       name:s.sprint_name,state:s.sprint_state,
       committed:m.committed_sp,
       bands:[
         {name:'Completed',value:m.completed_sp,color:'rgba(0,133,19,.55)'},
-        {name:'At risk (in-progress + carry)',value:atRisk,color:'rgba(227,40,81,.45)'},
         {name:'BAU',value:cm.bau,color:'rgba(255,147,44,.55)'},
         {name:'Adhoc',value:cm.adhoc,color:'rgba(255,157,222,.55)'},
       ]
@@ -674,7 +687,6 @@ function rOverview(){
   }
   h+=legend([
     {label:'Completed',color:'rgba(0,133,19,.55)'},
-    {label:'At risk (in-progress + carry)',color:'rgba(227,40,81,.45)'},
     {label:'BAU',color:'rgba(255,147,44,.55)'},
     {label:'Adhoc',color:'rgba(255,157,222,.55)'},
     {label:'Committed total',color:C.BLUE},
