@@ -45,19 +45,21 @@ def fetch_all_issues(jql: str) -> list[dict]:
               "JIRA_API_TOKEN must be set.")
         sys.exit(1)
 
-    url = f"{BASE_URL}/search"
+    # Atlassian removed /rest/api/3/search; enhanced search now lives here.
+    url = f"{BASE_URL}/search/jql"
     auth = (EMAIL, TOKEN)
-    start_at = 0
+    next_page_token = None
     max_results = 100
     all_issues: list[dict] = []
 
     while True:
         params = {
             "jql": jql,
-            "startAt": start_at,
             "maxResults": max_results,
             "fields": ",".join(FIELDS),
         }
+        if next_page_token:
+            params["nextPageToken"] = next_page_token
         resp = requests.get(url, params=params, auth=auth, timeout=30)
         resp.raise_for_status()
         data = resp.json()
@@ -65,11 +67,11 @@ def fetch_all_issues(jql: str) -> list[dict]:
         issues = data.get("issues", [])
         all_issues.extend(issues)
         print(f"  Fetched {len(issues)} issues "
-              f"(total: {len(all_issues)}/{data.get('total', '?')})")
+              f"(total so far: {len(all_issues)})")
 
-        if start_at + len(issues) >= data.get("total", 0):
+        next_page_token = data.get("nextPageToken")
+        if data.get("isLast", False) or not next_page_token:
             break
-        start_at += max_results
 
     return all_issues
 
