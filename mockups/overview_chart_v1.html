@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Overview Chart Mockup - Phase 1</title>
+<style>
+  :root{
+    --trv-red:#E32851;--trv-blue:#0088D9;--trv-orange:#FF932C;
+    --trv-pink:#FF9DDE;--trv-lightblue:#78DAFF;--trv-yellow:#FFCC31;
+    --trv-black:#000;--trv-white:#fff;--trv-warm-white:#F8F8F6;
+    --g100:#F7F7F7;--g200:#F0F0F0;--g300:#E0E0E0;--g500:#808080;
+    --g700:#515151;--g900:#1A1A1A;
+    --font:'Arial','Helvetica Neue',Helvetica,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--font);background:var(--trv-warm-white);color:var(--g900);padding:32px}
+  h1{font-size:18px;margin-bottom:6px}
+  h2{font-size:14px;margin:24px 0 6px}
+  p.lead{font-size:12px;color:var(--g700);margin-bottom:24px;max-width:900px}
+  p.note{font-size:11px;color:var(--g500);margin:6px 0 16px;max-width:900px}
+  .panel{background:var(--trv-white);border:1px solid var(--g300);border-radius:10px;padding:20px;margin-bottom:24px}
+  .panel-h{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+  .panel-h .tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--trv-blue);background:#E8F4FD;padding:3px 8px;border-radius:4px}
+  .panel-h .title{font-size:14px;font-weight:700}
+  .panel-h .sub{font-size:11px;color:var(--g500)}
+  .legend{display:flex;gap:14px;margin:8px 0 4px;flex-wrap:wrap}
+  .legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--g700)}
+  .legend-sq{width:12px;height:12px;border-radius:3px}
+
+  /* Reading D: stacked area (matches the screenshot) */
+  .area-wrap{position:relative;height:340px;padding:20px 30px 40px 50px;border-bottom:1px solid var(--g300)}
+  .area-wrap svg{width:100%;height:100%;display:block;overflow:visible}
+  .area-wrap .y-grid{stroke:var(--g300);stroke-width:1;stroke-dasharray:2 3}
+  .area-wrap .y-label{font-size:10px;fill:var(--g500)}
+  .area-wrap .x-label{font-size:10px;fill:var(--g500);text-anchor:middle}
+
+  /* Reading A: stacked single bar per sprint, with a Completed overlay marker */
+  .a-row{display:flex;align-items:flex-end;gap:24px;height:300px;padding:0 12px;border-bottom:1px solid var(--g300)}
+  .a-col{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end;max-width:200px}
+  .a-stack{width:84px;display:flex;flex-direction:column-reverse;border-radius:4px;overflow:hidden;position:relative;background:var(--g100)}
+  .a-seg{display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;min-height:0}
+  .a-seg.bau{background:var(--trv-orange)}
+  .a-seg.adhoc{background:var(--trv-pink);color:var(--g900)}
+  .a-seg.okr{background:var(--trv-blue)}
+  .a-marker{position:absolute;left:-6px;right:-6px;border-top:2px dashed #008513;pointer-events:none}
+  .a-marker .lbl{position:absolute;right:0;top:-16px;font-size:10px;font-weight:700;color:#008513;background:var(--trv-white);padding:0 4px}
+  .a-total{position:absolute;left:0;right:0;top:-22px;text-align:center;font-size:13px;font-weight:700;color:var(--g900)}
+  .a-cap{font-size:11px;color:var(--g700);text-align:center;margin-top:6px;font-weight:600}
+
+  /* Reading B */
+  .b-row{display:flex;align-items:flex-end;gap:32px;height:280px;padding:0 12px;border-bottom:1px solid var(--g300)}
+  .b-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;max-width:220px}
+  .b-bar-wrap{display:flex;align-items:flex-end;gap:6px;height:calc(100% - 28px)}
+  .b-bar{width:28px;border-radius:3px 3px 0 0;position:relative;cursor:default}
+  .b-bar .v{position:absolute;top:-16px;left:0;right:0;text-align:center;font-size:10px;font-weight:700;color:var(--g700)}
+  .b-bar.total{width:50px;background:var(--trv-blue)}
+  .b-bar.bau{background:var(--trv-orange)}
+  .b-bar.adhoc{background:var(--trv-pink)}
+  .b-bar.completed{background:var(--trv-lightblue)}
+  .b-cap{font-size:11px;color:var(--g700);text-align:center;margin-top:6px;font-weight:600}
+
+  /* Reading C */
+  .c-row{display:flex;align-items:flex-end;gap:24px;height:300px;padding:0 12px;border-bottom:1px solid var(--g300)}
+  .c-col{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end;max-width:200px}
+  .c-stack{width:84px;display:flex;flex-direction:column-reverse;border-radius:4px;overflow:hidden;position:relative;background:var(--g100)}
+  .c-seg{display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700}
+  .c-seg.bau{background:var(--trv-orange)}
+  .c-seg.adhoc{background:var(--trv-pink);color:var(--g900)}
+  .c-seg.okr{background:var(--trv-blue);position:relative;overflow:hidden}
+  .c-seg.okr .done{position:absolute;left:0;right:0;bottom:0;background:var(--trv-lightblue);color:var(--g900);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700}
+  .c-total{position:absolute;left:0;right:0;top:-22px;text-align:center;font-size:13px;font-weight:700;color:var(--g900)}
+  .c-cap{font-size:11px;color:var(--g700);text-align:center;margin-top:6px;font-weight:600}
+
+  .pick code{background:var(--g100);padding:2px 6px;border-radius:3px;font-size:11px}
+</style>
+</head>
+<body>
+
+<h1>Sprint Overview chart - phase 1 mockup</h1>
+<p class="lead">All readings use real numbers from <code>data/sprints.json</code> (last updated 2026-04-28).
+<strong>Reading D matches the stacked-area chart you referenced from the earlier screenshot.</strong>
+A/B/C are alternative styles kept for comparison.</p>
+
+<!-- Reading D: stacked area (target) -->
+<div class="panel">
+  <div class="panel-h">
+    <span class="tag">Reading D - target</span>
+    <span class="title">Stacked area across sprints (matches your screenshot)</span>
+    <span class="sub">Shows trend over time; each band stacks on the previous</span>
+  </div>
+  <div class="area-wrap"><svg id="d-svg" preserveAspectRatio="none"></svg></div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-sq" style="background:rgba(0,136,217,.55)"></div>OKR (committed)</div>
+    <div class="legend-item"><div class="legend-sq" style="background:rgba(255,147,44,.55)"></div>BAU + Adhoc</div>
+    <div class="legend-item"><div class="legend-sq" style="background:rgba(0,133,19,.55)"></div>Completed</div>
+    <div class="legend-item"><div class="legend-sq" style="background:rgba(227,40,81,.45)"></div>In Progress + Carry-over (at risk)</div>
+  </div>
+  <p class="note">Strength: scan trends across sprints in one view. Total height = committed; coloured
+  bands show where the work is concentrated. Closed sprints on the left, active on the right.</p>
+</div>
+
+<!-- Reading A -->
+<div class="panel">
+  <div class="panel-h">
+    <span class="tag">Reading A</span>
+    <span class="title">Single stacked TOTAL bar per sprint - segments BAU / Adhoc / OKR</span>
+    <span class="sub">Completed shown as a dashed line overlay</span>
+  </div>
+  <div class="a-row" id="a-row"></div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-sq" style="background:#0088D9"></div>OKR</div>
+    <div class="legend-item"><div class="legend-sq" style="background:#FF932C"></div>BAU</div>
+    <div class="legend-item"><div class="legend-sq" style="background:#FF9DDE"></div>Adhoc</div>
+    <div class="legend-item"><div class="legend-sq" style="background:#fff;border:2px dashed #008513"></div>Completed (overlay)</div>
+  </div>
+</div>
+
+<!-- Reading B -->
+<div class="panel">
+  <div class="panel-h">
+    <span class="tag">Reading B</span>
+    <span class="title">Grouped bars (today's chart) re-anchored - TOTAL is the dominant bar</span>
+  </div>
+  <div class="b-row" id="b-row"></div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-sq" style="background:#0088D9"></div>TOTAL committed</div>
+    <div class="legend-item"><div class="legend-sq" style="background:#FF932C"></div>BAU</div>
+    <div class="legend-item"><div class="legend-sq" style="background:#FF9DDE"></div>Adhoc</div>
+    <div class="legend-item"><div class="legend-sq" style="background:#78DAFF"></div>Completed</div>
+  </div>
+</div>
+
+<!-- Reading C -->
+<div class="panel">
+  <div class="panel-h">
+    <span class="tag">Reading C</span>
+    <span class="title">Stacked TOTAL with Completed shown as filled portion within OKR</span>
+  </div>
+  <div class="c-row" id="c-row"></div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-sq" style="background:#0088D9"></div>OKR (committed)</div>
+    <div class="legend-item"><div class="legend-sq" style="background:#78DAFF"></div>Completed (within OKR)</div>
+    <div class="legend-item"><div class="legend-sq" style="background:#FF932C"></div>BAU</div>
+    <div class="legend-item"><div class="legend-sq" style="background:#FF9DDE"></div>Adhoc</div>
+  </div>
+</div>
+
+<h2>How to choose</h2>
+<p class="note pick">Reply with: <strong>D</strong> (recommended, matches screenshot), <strong>A</strong>,
+<strong>B</strong>, or <strong>C</strong>. The pick gates the code change at
+<code>index.html</code> lines 572-594.</p>
+
+<script>
+// Time-ordered series (closed sprints first, then active).
+const SERIES = [
+  {name:'BRAND_CIM_SPRINT_1', start:'2026-04-10', state:'closed', committed:21.0,  bau:6.0,  adhoc:0.5, okr:14.5, completed:20.0, inprog:1.0,  todo:0.0},
+  {name:'MSI_EXP_SPRINT_1',   start:'2026-04-13', state:'closed', committed:32.95, bau:16.6, adhoc:5.1, okr:11.25,completed:27.95,inprog:0.0,  todo:5.0},
+  {name:'MSI_OPS_SPRINT_1',   start:'2026-04-13', state:'closed', committed:60.1,  bau:8.0,  adhoc:2.1, okr:50.0, completed:50.6, inprog:0.0,  todo:9.5},
+  {name:'BRAND_CIM_SPRINT_2', start:'2026-04-27', state:'active', committed:20.5,  bau:4.75, adhoc:1.25,okr:14.5, completed:0.0,  inprog:2.0,  todo:18.5},
+  {name:'MSI_EXP_SPRINT_2',   start:'2026-04-27', state:'active', committed:23.5,  bau:6.0,  adhoc:4.5, okr:13.0, completed:0.3,  inprog:0.0,  todo:23.2},
+  {name:'MSI_OPS_SPRINT_2',   start:'2026-04-27', state:'active', committed:49.1,  bau:0.0,  adhoc:0.0, okr:49.1, completed:0.0,  inprog:9.0,  todo:40.1},
+];
+
+// Rows for grouped bar mockups (active sprints + TOTAL).
+const ACTIVE = SERIES.filter(s=>s.state==='active');
+const total = ACTIVE.reduce((acc,r)=>({
+  name:'TOTAL',
+  committed: acc.committed + r.committed,
+  bau: acc.bau + r.bau, adhoc: acc.adhoc + r.adhoc, okr: acc.okr + r.okr,
+  completed: acc.completed + r.completed, inprog: acc.inprog + r.inprog, todo: acc.todo + r.todo,
+}), {committed:0,bau:0,adhoc:0,okr:0,completed:0,inprog:0,todo:0});
+const ALL = [...ACTIVE, total];
+
+/* Reading D: stacked area chart */
+function renderArea(){
+  const svg = document.getElementById('d-svg');
+  const W = svg.clientWidth || 900;
+  const H = 300;
+  const padL = 50, padR = 30, padT = 20, padB = 40;
+  const pw = W - padL - padR, ph = H - padT - padB;
+
+  // Bands stacked from bottom up: completed -> in-progress+todo -> bau+adhoc -> committed top.
+  // To match the screenshot pattern (overlapping ribbons), we render four cumulative areas.
+  const bands = SERIES.map(s=>{
+    const completed = s.completed;
+    const atRisk    = s.inprog + s.todo; // red band (carry/in-progress)
+    const overhead  = s.bau + s.adhoc;   // orange band
+    const okr       = Math.max(0, s.okr - overhead - atRisk - completed); // remainder
+    // We instead build cumulative tops for clean stacked area:
+    const cum1 = completed;
+    const cum2 = cum1 + atRisk;
+    const cum3 = cum2 + overhead;
+    const cum4 = s.committed; // top
+    return {name:s.name, completed, atRisk, overhead, okrTail: Math.max(0, cum4 - cum3), cum1, cum2, cum3, cum4};
+  });
+
+  const maxY = Math.max(...bands.map(b=>b.cum4)) * 1.05;
+  const xs = (i)=> padL + (i / (bands.length - 1)) * pw;
+  const ys = (v)=> padT + ph - (v / maxY) * ph;
+
+  const polygon = (topVals, bottomVals) => {
+    const pts = [];
+    topVals.forEach((v,i)=>pts.push(`${xs(i)},${ys(v)}`));
+    for (let i = bottomVals.length - 1; i >= 0; i--) pts.push(`${xs(i)},${ys(bottomVals[i])}`);
+    return pts.join(' ');
+  };
+
+  const cum0 = bands.map(()=>0);
+  const cum1 = bands.map(b=>b.cum1);
+  const cum2 = bands.map(b=>b.cum2);
+  const cum3 = bands.map(b=>b.cum3);
+  const cum4 = bands.map(b=>b.cum4);
+
+  const yGrid = [];
+  const step = Math.ceil(maxY / 5 / 10) * 10;
+  for (let v = 0; v <= maxY; v += step) {
+    yGrid.push(`<line class="y-grid" x1="${padL}" y1="${ys(v)}" x2="${padL+pw}" y2="${ys(v)}"/>` +
+               `<text class="y-label" x="${padL-6}" y="${ys(v)+3}" text-anchor="end">${v}</text>`);
+  }
+
+  const xLabels = bands.map((b,i)=>{
+    const short = b.name.replace('_SPRINT_', '\u00a0S');
+    return `<text class="x-label" x="${xs(i)}" y="${padT+ph+18}">${short}</text>`;
+  });
+
+  // Top ribbon = stroke line for "Committed" total like the screenshot's blue line.
+  const linePath = cum4.map((v,i)=>`${i===0?'M':'L'}${xs(i)},${ys(v)}`).join('');
+
+  svg.innerHTML = `
+    <svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
+      ${yGrid.join('')}
+      <polygon points="${polygon(cum1, cum0)}" fill="rgba(0,133,19,.55)"/>
+      <polygon points="${polygon(cum2, cum1)}" fill="rgba(227,40,81,.45)"/>
+      <polygon points="${polygon(cum3, cum2)}" fill="rgba(255,147,44,.55)"/>
+      <polygon points="${polygon(cum4, cum3)}" fill="rgba(0,136,217,.55)"/>
+      <path d="${linePath}" stroke="#0088D9" stroke-width="2" fill="none"/>
+      ${cum4.map((v,i)=>`<circle cx="${xs(i)}" cy="${ys(v)}" r="3" fill="#0088D9"/>`).join('')}
+      ${xLabels.join('')}
+    </svg>
+  `;
+  // Replace nested <svg> with inner content (preserve outer svg sizing)
+  const inner = svg.querySelector('svg');
+  if (inner) {
+    while (inner.firstChild) svg.appendChild(inner.firstChild);
+    inner.remove();
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  }
+}
+renderArea();
+window.addEventListener('resize', renderArea);
+
+/* Reading A */
+const maxA = Math.max(...ALL.map(r=>r.committed));
+const aRow = document.getElementById('a-row');
+ALL.forEach(r=>{
+  const heightPct = r.committed ? (r.committed / maxA) * 100 : 0;
+  const okrPct   = r.committed ? (r.okr / r.committed) * 100 : 0;
+  const bauPct   = r.committed ? (r.bau / r.committed) * 100 : 0;
+  const adhocPct = r.committed ? (r.adhoc / r.committed) * 100 : 0;
+  const donePct  = r.committed ? (r.completed / r.committed) * 100 : 0;
+  const col = document.createElement('div');
+  col.className = 'a-col';
+  col.innerHTML = `
+    <div class="a-stack" style="height:${heightPct}%;min-height:1px;">
+      <div class="a-total">${r.committed.toFixed(1)} SP</div>
+      <div class="a-seg okr"   style="height:${okrPct}%">${r.okr>1?r.okr.toFixed(1):''}</div>
+      <div class="a-seg bau"   style="height:${bauPct}%">${r.bau>1?r.bau.toFixed(1):''}</div>
+      <div class="a-seg adhoc" style="height:${adhocPct}%">${r.adhoc>1?r.adhoc.toFixed(1):''}</div>
+      ${r.completed>0 ? `<div class="a-marker" style="bottom:${donePct}%"><span class="lbl">${r.completed.toFixed(1)} done</span></div>` : ''}
+    </div>
+    <div class="a-cap">${r.name}</div>
+  `;
+  aRow.appendChild(col);
+});
+
+/* Reading B */
+const maxB = Math.max(...ALL.map(r=>Math.max(r.committed, r.bau, r.adhoc, r.completed)));
+const bRow = document.getElementById('b-row');
+ALL.forEach(r=>{
+  const h = v => v ? Math.max((v / maxB) * 100, 1) : 0;
+  const col = document.createElement('div');
+  col.className = 'b-col';
+  col.innerHTML = `
+    <div class="b-bar-wrap">
+      <div class="b-bar total"     style="height:${h(r.committed)}%"><span class="v">${r.committed.toFixed(1)}</span></div>
+      <div class="b-bar bau"       style="height:${h(r.bau)}%"><span class="v">${r.bau>0?r.bau.toFixed(1):''}</span></div>
+      <div class="b-bar adhoc"     style="height:${h(r.adhoc)}%"><span class="v">${r.adhoc>0?r.adhoc.toFixed(1):''}</span></div>
+      <div class="b-bar completed" style="height:${h(r.completed)}%"><span class="v">${r.completed>0?r.completed.toFixed(1):''}</span></div>
+    </div>
+    <div class="b-cap">${r.name}</div>
+  `;
+  bRow.appendChild(col);
+});
+
+/* Reading C */
+const cRow = document.getElementById('c-row');
+ALL.forEach(r=>{
+  const heightPct = r.committed ? (r.committed / maxA) * 100 : 0;
+  const okrPct   = r.committed ? (r.okr / r.committed) * 100 : 0;
+  const bauPct   = r.committed ? (r.bau / r.committed) * 100 : 0;
+  const adhocPct = r.committed ? (r.adhoc / r.committed) * 100 : 0;
+  const doneOfOkr = r.okr ? Math.min((r.completed / r.okr) * 100, 100) : 0;
+  const col = document.createElement('div');
+  col.className = 'c-col';
+  col.innerHTML = `
+    <div class="c-stack" style="height:${heightPct}%;min-height:1px;">
+      <div class="c-total">${r.committed.toFixed(1)} SP</div>
+      <div class="c-seg okr" style="height:${okrPct}%">
+        <span>${r.okr>1?r.okr.toFixed(1):''}</span>
+        ${r.completed>0 ? `<div class="done" style="height:${doneOfOkr}%">${r.completed.toFixed(1)}</div>` : ''}
+      </div>
+      <div class="c-seg bau"   style="height:${bauPct}%">${r.bau>1?r.bau.toFixed(1):''}</div>
+      <div class="c-seg adhoc" style="height:${adhocPct}%">${r.adhoc>1?r.adhoc.toFixed(1):''}</div>
+    </div>
+    <div class="c-cap">${r.name}</div>
+  `;
+  cRow.appendChild(col);
+});
+</script>
+
+</body>
+</html>
