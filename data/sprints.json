@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T08:31:52.753073+00:00",
+  "last_updated": "2026-05-18T10:39:43.056098+00:00",
   "board_id": 7527,
   "board_name": "MSI_OKR_SUMMER_2026",
   "snapshots": [
@@ -3641,1113 +3641,6 @@
       ]
     },
     {
-      "snapshot_date": "2026-05-10T08:21:05.837421+00:00",
-      "sprint_name": "BRAND_CIM_SPRINT_2",
-      "sprint_state": "closed",
-      "sprint_start": "2026-04-27",
-      "sprint_end": "2026-05-08",
-      "metrics": {
-        "committed_sp": 24.3,
-        "completed_sp": 15.55,
-        "velocity": 15.55,
-        "committed_count": 20,
-        "completed_count": 13,
-        "commitment_ratio": 0.64,
-        "carry_over_sp": 8.75,
-        "carry_over_count": 7,
-        "unestimated_subtasks": 0,
-        "per_person": [
-          {
-            "assignee": "Sandra Knezevic",
-            "committed_sp": 7.0,
-            "completed_sp": 7.0,
-            "count": 4
-          },
-          {
-            "assignee": "Diana Kazakova",
-            "committed_sp": 7.3,
-            "completed_sp": 4.8,
-            "count": 7
-          },
-          {
-            "assignee": "Maria Bonerz",
-            "committed_sp": 8.0,
-            "completed_sp": 3.75,
-            "count": 8
-          },
-          {
-            "assignee": "Olga Ivleva",
-            "committed_sp": 2.0,
-            "completed_sp": 0,
-            "count": 1
-          }
-        ],
-        "per_team": [
-          {
-            "team": "MSI_BRAND_CIM",
-            "committed_sp": 24.3,
-            "completed_sp": 15.55
-          }
-        ]
-      },
-      "team_metrics": {
-        "MSI_BRAND_CIM": {
-          "committed_sp": 24.3,
-          "completed_sp": 15.55,
-          "velocity": 15.55,
-          "committed_count": 20,
-          "completed_count": 13,
-          "commitment_ratio": 0.64,
-          "carry_over_sp": 8.75,
-          "carry_over_count": 7,
-          "unestimated_subtasks": 0,
-          "per_person": [
-            {
-              "assignee": "Sandra Knezevic",
-              "committed_sp": 7.0,
-              "completed_sp": 7.0,
-              "count": 4
-            },
-            {
-              "assignee": "Diana Kazakova",
-              "committed_sp": 7.3,
-              "completed_sp": 4.8,
-              "count": 7
-            },
-            {
-              "assignee": "Maria Bonerz",
-              "committed_sp": 8.0,
-              "completed_sp": 3.75,
-              "count": 8
-            },
-            {
-              "assignee": "Olga Ivleva",
-              "committed_sp": 2.0,
-              "completed_sp": 0,
-              "count": 1
-            }
-          ],
-          "per_team": [
-            {
-              "team": "MSI_BRAND_CIM",
-              "committed_sp": 24.3,
-              "completed_sp": 15.55
-            }
-          ]
-        }
-      },
-      "issues": [
-        {
-          "key": "MSI-1727",
-          "summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1710",
-          "parent_summary": "Increase trivago brand trust through evidence-based initiatives and sentiment monitoring",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 6.0,
-          "due_date": "2026-05-15",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1728",
-          "summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1710",
-          "parent_summary": "Increase trivago brand trust through evidence-based initiatives and sentiment monitoring",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 7.5,
-          "due_date": "2026-05-18",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1744",
-          "summary": "M2: Price sensitivity test concluded",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1713",
-          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 4.0,
-          "due_date": "2026-05-31",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1745",
-          "summary": "M3: Target market list",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1713",
-          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 4.0,
-          "due_date": "2026-05-31",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1746",
-          "summary": "M4: Price-focused communication strategy per test market",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1713",
-          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-06-30",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1779",
-          "summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1719",
-          "parent_summary": "Achieve 90% usage intent in Concept testing vs YHTC",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-09-15",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1780",
-          "summary": "M2: Detect potential gaps between concept stage & final creative asset, quantify gap on usage intent, decompose by drivers",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1719",
-          "parent_summary": "Achieve 90% usage intent in Concept testing vs YHTC",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-09-15",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1819",
-          "summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1725",
-          "parent_summary": "Measure impact of Brand spend on brand health KPIs across segments",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 6.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1820",
-          "summary": "M3: Design, setup and launch the tracker with the partner agency by 1st of June to capture summer demand",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1725",
-          "parent_summary": "Measure impact of Brand spend on brand health KPIs across segments",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.5,
-          "due_date": "2026-06-01",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1844",
-          "summary": "initiate first communication with at least 3 agencies ",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1819",
-          "parent_summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.0,
-          "due_date": "2026-04-22",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1845",
-          "summary": "Review proposals and select a partner agency: Part 1",
-          "status": "Done",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1819",
-          "parent_summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.0,
-          "due_date": "2026-05-08",
-          "resolution_date": "2026-05-08T16:30:37.230+0200",
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1847",
-          "summary": "First Draft: Design price sensitivity test (incl. vendor selection) - pt.1",
-          "status": "Completed Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Olga Ivleva",
-          "parent_key": "MSI-1744",
-          "parent_summary": "M2: Price sensitivity test concluded",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.0,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1848",
-          "summary": "First evaluation of potential test markets (shortlist of 5 markets) - Part 1",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1745",
-          "parent_summary": "M3: Target market list",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1849",
-          "summary": "Create list of new deals-focused mkt claims",
-          "status": "Completed Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1746",
-          "parent_summary": "M4: Price-focused communication strategy per test market",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1874",
-          "summary": "Research ",
-          "status": "Completed Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1727",
-          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.5,
-          "due_date": "2026-04-17",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1876",
-          "summary": "Strategy Paper Part 1",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1727",
-          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1878",
-          "summary": "Gloabl TV Brief Review and Sign Off Part 1",
-          "status": "Completed",
-          "status_category": "Done",
-          "issue_type": "Request",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-1879",
-          "summary": "Research & Data Colection Part 1",
-          "status": "Completed Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1728",
-          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2018",
-          "summary": "Retesting final creatives US",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1779",
-          "parent_summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2019",
-          "summary": "Testing animatic + final TV spot (DE)",
-          "status": "Completed",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1780",
-          "parent_summary": "M2: Detect potential gaps between concept stage & final creative asset, quantify gap on usage intent, decompose by drivers",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2024",
-          "summary": "Retesting final creatives ES",
-          "status": "Completed",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1779",
-          "parent_summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2049",
-          "summary": "First evaluation of potential test markets (shortlist of 5 markets) - Part 2",
-          "status": "Done",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1745",
-          "parent_summary": "M3: Target market list",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.5,
-          "due_date": "2026-05-08",
-          "resolution_date": "2026-05-08T17:13:19.987+0200",
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2050",
-          "summary": "Brief for 2 new global TV spots (featuring Klopp) - Part 2",
-          "status": "Submitted",
-          "status_category": "Done",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2051",
-          "summary": "JP: Brief for 2 new TV spots - Part 2",
-          "status": "Submitted",
-          "status_category": "Done",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-07",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2052",
-          "summary": "Brief for new deals-based MKT claims",
-          "status": "Done",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1746",
-          "parent_summary": "M4: Price-focused communication strategy per test market",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-08",
-          "resolution_date": "2026-05-08T17:12:54.746+0200",
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2057",
-          "summary": "Strategy Paper Part 2",
-          "status": "Completed",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1727",
-          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2058",
-          "summary": "Research & Data Colection Part 2",
-          "status": "Rejected / On Hold",
-          "status_category": "In Progress",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1728",
-          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 3.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2063",
-          "summary": "Run creative analysis test",
-          "status": "Rejected / On Hold",
-          "status_category": "In Progress",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2064",
-          "summary": "Dealfinder North star workshop",
-          "status": "Completed",
-          "status_category": "Done",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.25,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2065",
-          "summary": "Product council",
-          "status": "Rejected / On Hold",
-          "status_category": "In Progress",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.25,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2066",
-          "summary": "WC Campaign Management",
-          "status": "Completed",
-          "status_category": "Done",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2067",
-          "summary": "Cycle 2 Project Planning, OKR review, cursor skill development",
-          "status": "Rejected / On Hold",
-          "status_category": "In Progress",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2068",
-          "summary": "First Draft: Design price sensitivity test ( execution) pt. 2",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Olga Ivleva",
-          "parent_key": "MSI-1744",
-          "parent_summary": "M2: Price sensitivity test concluded",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2111",
-          "summary": "agency meeting kick off prep",
-          "status": "On Hold",
-          "status_category": "In Progress",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1820",
-          "parent_summary": "M3: Design, setup and launch the tracker with the partner agency by 1st of June to capture summer demand",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2136",
-          "summary": "Small Improvements & OKR planning",
-          "status": "On Hold",
-          "status_category": "In Progress",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-07",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2172",
-          "summary": "Evaluation of potential test markets (shortlist of 5 markets) - Part 3",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Sandra Knezevic",
-          "parent_key": "MSI-1745",
-          "parent_summary": "M3: Target market list",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2180",
-          "summary": "BLS Evaluation: MX",
-          "status": "Completed",
-          "status_category": "Done",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 0.3,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2183",
-          "summary": "MIM wave launch, Finance - invoice investigation, CJM study proposals review etc",
-          "status": "Completed",
-          "status_category": "Done",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2185",
-          "summary": "Review proposals and select a partner agency: Part 2",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Diana Kazakova",
-          "parent_key": "MSI-1819",
-          "parent_summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2192",
-          "summary": "Trust - Model Definition",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1728",
-          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.5,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2193",
-          "summary": "Trust - Test ideas collection",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1728",
-          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 1.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2194",
-          "summary": "Build MVP",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Maria Bonerz",
-          "parent_key": "MSI-1727",
-          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
-          "labels": [
-            "MSI_BRAND_CIM",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_BRAND_CIM",
-          "story_points": 2.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "BRAND_CIM_SPRINT_2",
-          "sprint_state": "active",
-          "sprint_start": "2026-04-27",
-          "sprint_end": "2026-05-08",
-          "category": "okr"
-        }
-      ]
-    },
-    {
       "snapshot_date": "2026-05-11T09:36:30.307100+00:00",
       "sprint_name": "MSI_OPS_SPRINT_2",
       "sprint_state": "closed",
@@ -6778,6 +5671,1113 @@
     },
     {
       "snapshot_date": "2026-05-10T08:21:05.837421+00:00",
+      "sprint_name": "BRAND_CIM_SPRINT_2",
+      "sprint_state": "closed",
+      "sprint_start": "2026-04-27",
+      "sprint_end": "2026-05-08",
+      "metrics": {
+        "committed_sp": 24.3,
+        "completed_sp": 15.55,
+        "velocity": 15.55,
+        "committed_count": 20,
+        "completed_count": 13,
+        "commitment_ratio": 0.64,
+        "carry_over_sp": 8.75,
+        "carry_over_count": 7,
+        "unestimated_subtasks": 0,
+        "per_person": [
+          {
+            "assignee": "Sandra Knezevic",
+            "committed_sp": 7.0,
+            "completed_sp": 7.0,
+            "count": 4
+          },
+          {
+            "assignee": "Diana Kazakova",
+            "committed_sp": 7.3,
+            "completed_sp": 4.8,
+            "count": 7
+          },
+          {
+            "assignee": "Maria Bonerz",
+            "committed_sp": 8.0,
+            "completed_sp": 3.75,
+            "count": 8
+          },
+          {
+            "assignee": "Olga Ivleva",
+            "committed_sp": 2.0,
+            "completed_sp": 0,
+            "count": 1
+          }
+        ],
+        "per_team": [
+          {
+            "team": "MSI_BRAND_CIM",
+            "committed_sp": 24.3,
+            "completed_sp": 15.55
+          }
+        ]
+      },
+      "team_metrics": {
+        "MSI_BRAND_CIM": {
+          "committed_sp": 24.3,
+          "completed_sp": 15.55,
+          "velocity": 15.55,
+          "committed_count": 20,
+          "completed_count": 13,
+          "commitment_ratio": 0.64,
+          "carry_over_sp": 8.75,
+          "carry_over_count": 7,
+          "unestimated_subtasks": 0,
+          "per_person": [
+            {
+              "assignee": "Sandra Knezevic",
+              "committed_sp": 7.0,
+              "completed_sp": 7.0,
+              "count": 4
+            },
+            {
+              "assignee": "Diana Kazakova",
+              "committed_sp": 7.3,
+              "completed_sp": 4.8,
+              "count": 7
+            },
+            {
+              "assignee": "Maria Bonerz",
+              "committed_sp": 8.0,
+              "completed_sp": 3.75,
+              "count": 8
+            },
+            {
+              "assignee": "Olga Ivleva",
+              "committed_sp": 2.0,
+              "completed_sp": 0,
+              "count": 1
+            }
+          ],
+          "per_team": [
+            {
+              "team": "MSI_BRAND_CIM",
+              "committed_sp": 24.3,
+              "completed_sp": 15.55
+            }
+          ]
+        }
+      },
+      "issues": [
+        {
+          "key": "MSI-1727",
+          "summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1710",
+          "parent_summary": "Increase trivago brand trust through evidence-based initiatives and sentiment monitoring",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 6.0,
+          "due_date": "2026-05-15",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1728",
+          "summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1710",
+          "parent_summary": "Increase trivago brand trust through evidence-based initiatives and sentiment monitoring",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 7.5,
+          "due_date": "2026-05-18",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1744",
+          "summary": "M2: Price sensitivity test concluded",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1713",
+          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 4.0,
+          "due_date": "2026-05-31",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1745",
+          "summary": "M3: Target market list",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1713",
+          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 4.0,
+          "due_date": "2026-05-31",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1746",
+          "summary": "M4: Price-focused communication strategy per test market",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1713",
+          "parent_summary": "Strengthen trivago's price perception as the go-to platform for the best hotel deals by enhancing communication, product feature & deal visibility",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-06-30",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1779",
+          "summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1719",
+          "parent_summary": "Achieve 90% usage intent in Concept testing vs YHTC",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-09-15",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1780",
+          "summary": "M2: Detect potential gaps between concept stage & final creative asset, quantify gap on usage intent, decompose by drivers",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1719",
+          "parent_summary": "Achieve 90% usage intent in Concept testing vs YHTC",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-09-15",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1819",
+          "summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1725",
+          "parent_summary": "Measure impact of Brand spend on brand health KPIs across segments",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 6.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1820",
+          "summary": "M3: Design, setup and launch the tracker with the partner agency by 1st of June to capture summer demand",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1725",
+          "parent_summary": "Measure impact of Brand spend on brand health KPIs across segments",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.5,
+          "due_date": "2026-06-01",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1844",
+          "summary": "initiate first communication with at least 3 agencies ",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1819",
+          "parent_summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.0,
+          "due_date": "2026-04-22",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1845",
+          "summary": "Review proposals and select a partner agency: Part 1",
+          "status": "Done",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1819",
+          "parent_summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.0,
+          "due_date": "2026-05-08",
+          "resolution_date": "2026-05-08T16:30:37.230+0200",
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1847",
+          "summary": "First Draft: Design price sensitivity test (incl. vendor selection) - pt.1",
+          "status": "Completed Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Olga Ivleva",
+          "parent_key": "MSI-1744",
+          "parent_summary": "M2: Price sensitivity test concluded",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.0,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1848",
+          "summary": "First evaluation of potential test markets (shortlist of 5 markets) - Part 1",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1745",
+          "parent_summary": "M3: Target market list",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1849",
+          "summary": "Create list of new deals-focused mkt claims",
+          "status": "Completed Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1746",
+          "parent_summary": "M4: Price-focused communication strategy per test market",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1874",
+          "summary": "Research ",
+          "status": "Completed Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1727",
+          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.5,
+          "due_date": "2026-04-17",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1876",
+          "summary": "Strategy Paper Part 1",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1727",
+          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1878",
+          "summary": "Gloabl TV Brief Review and Sign Off Part 1",
+          "status": "Completed",
+          "status_category": "Done",
+          "issue_type": "Request",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-1879",
+          "summary": "Research & Data Colection Part 1",
+          "status": "Completed Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1728",
+          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2018",
+          "summary": "Retesting final creatives US",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1779",
+          "parent_summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2019",
+          "summary": "Testing animatic + final TV spot (DE)",
+          "status": "Completed",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1780",
+          "parent_summary": "M2: Detect potential gaps between concept stage & final creative asset, quantify gap on usage intent, decompose by drivers",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2024",
+          "summary": "Retesting final creatives ES",
+          "status": "Completed",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1779",
+          "parent_summary": "M1: Verify tool accuracy (≥70%) by testing concepts and retesting final assets and update benchmarks",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2049",
+          "summary": "First evaluation of potential test markets (shortlist of 5 markets) - Part 2",
+          "status": "Done",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1745",
+          "parent_summary": "M3: Target market list",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.5,
+          "due_date": "2026-05-08",
+          "resolution_date": "2026-05-08T17:13:19.987+0200",
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2050",
+          "summary": "Brief for 2 new global TV spots (featuring Klopp) - Part 2",
+          "status": "Submitted",
+          "status_category": "Done",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2051",
+          "summary": "JP: Brief for 2 new TV spots - Part 2",
+          "status": "Submitted",
+          "status_category": "Done",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-07",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2052",
+          "summary": "Brief for new deals-based MKT claims",
+          "status": "Done",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1746",
+          "parent_summary": "M4: Price-focused communication strategy per test market",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-08",
+          "resolution_date": "2026-05-08T17:12:54.746+0200",
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2057",
+          "summary": "Strategy Paper Part 2",
+          "status": "Completed",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1727",
+          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2058",
+          "summary": "Research & Data Colection Part 2",
+          "status": "Rejected / On Hold",
+          "status_category": "In Progress",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1728",
+          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 3.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2063",
+          "summary": "Run creative analysis test",
+          "status": "Rejected / On Hold",
+          "status_category": "In Progress",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2064",
+          "summary": "Dealfinder North star workshop",
+          "status": "Completed",
+          "status_category": "Done",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.25,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2065",
+          "summary": "Product council",
+          "status": "Rejected / On Hold",
+          "status_category": "In Progress",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.25,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2066",
+          "summary": "WC Campaign Management",
+          "status": "Completed",
+          "status_category": "Done",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2067",
+          "summary": "Cycle 2 Project Planning, OKR review, cursor skill development",
+          "status": "Rejected / On Hold",
+          "status_category": "In Progress",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2068",
+          "summary": "First Draft: Design price sensitivity test ( execution) pt. 2",
+          "status": "Ready for Sprint",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Olga Ivleva",
+          "parent_key": "MSI-1744",
+          "parent_summary": "M2: Price sensitivity test concluded",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2111",
+          "summary": "agency meeting kick off prep",
+          "status": "On Hold",
+          "status_category": "In Progress",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1820",
+          "parent_summary": "M3: Design, setup and launch the tracker with the partner agency by 1st of June to capture summer demand",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2136",
+          "summary": "Small Improvements & OKR planning",
+          "status": "On Hold",
+          "status_category": "In Progress",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-07",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2172",
+          "summary": "Evaluation of potential test markets (shortlist of 5 markets) - Part 3",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Sandra Knezevic",
+          "parent_key": "MSI-1745",
+          "parent_summary": "M3: Target market list",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2180",
+          "summary": "BLS Evaluation: MX",
+          "status": "Completed",
+          "status_category": "Done",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 0.3,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2183",
+          "summary": "MIM wave launch, Finance - invoice investigation, CJM study proposals review etc",
+          "status": "Completed",
+          "status_category": "Done",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2185",
+          "summary": "Review proposals and select a partner agency: Part 2",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Diana Kazakova",
+          "parent_key": "MSI-1819",
+          "parent_summary": "M2: Select a partner agency with the optimal cost & speed & depth balance",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2192",
+          "summary": "Trust - Model Definition",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1728",
+          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.5,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2193",
+          "summary": "Trust - Test ideas collection",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1728",
+          "parent_summary": "M2: Trust Model with differentiation between acquisition and loyalty developed",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 1.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2194",
+          "summary": "Build MVP",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Maria Bonerz",
+          "parent_key": "MSI-1727",
+          "parent_summary": "M1: First sentiment Measurement set up & baseline recorded, clear insights on brand confusion",
+          "labels": [
+            "MSI_BRAND_CIM",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_BRAND_CIM",
+          "story_points": 2.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "BRAND_CIM_SPRINT_2",
+          "sprint_state": "active",
+          "sprint_start": "2026-04-27",
+          "sprint_end": "2026-05-08",
+          "category": "okr"
+        }
+      ]
+    },
+    {
+      "snapshot_date": "2026-05-10T08:21:05.837421+00:00",
       "sprint_name": "MSI_EXP_SPRINT_2",
       "sprint_state": "closed",
       "sprint_start": "2026-04-27",
@@ -8190,21 +8190,1233 @@
       ]
     },
     {
-      "snapshot_date": "2026-05-17T08:31:52.753073+00:00",
+      "snapshot_date": "2026-05-18T10:39:43.056098+00:00",
+      "sprint_name": "MSI_EXP_SPRINT_3",
+      "sprint_state": "active",
+      "sprint_start": "2026-05-11",
+      "sprint_end": "2026-05-22",
+      "metrics": {
+        "committed_sp": 39.55,
+        "completed_sp": 4.0,
+        "velocity": 4.0,
+        "committed_count": 22,
+        "completed_count": 4,
+        "commitment_ratio": 0.101,
+        "carry_over_sp": 35.55,
+        "carry_over_count": 18,
+        "unestimated_subtasks": 0,
+        "per_person": [
+          {
+            "assignee": "Pavel Tobengauz",
+            "committed_sp": 8.5,
+            "completed_sp": 2.5,
+            "count": 6
+          },
+          {
+            "assignee": "Qurratulain Khaleeq",
+            "committed_sp": 1.0,
+            "completed_sp": 1.0,
+            "count": 1
+          },
+          {
+            "assignee": "Ziqi Wang",
+            "committed_sp": 7.5,
+            "completed_sp": 0.5,
+            "count": 4
+          },
+          {
+            "assignee": "Sara Boroni",
+            "committed_sp": 7.5,
+            "completed_sp": 0,
+            "count": 2
+          },
+          {
+            "assignee": "Simon Brandenburg",
+            "committed_sp": 9.05,
+            "completed_sp": 0,
+            "count": 7
+          },
+          {
+            "assignee": "Prudhviteja Cherukuri",
+            "committed_sp": 6.0,
+            "completed_sp": 0,
+            "count": 2
+          }
+        ],
+        "per_team": [
+          {
+            "team": "MSI_EXP",
+            "committed_sp": 39.55,
+            "completed_sp": 4.0
+          }
+        ]
+      },
+      "team_metrics": {
+        "MSI_EXP": {
+          "committed_sp": 39.55,
+          "completed_sp": 4.0,
+          "velocity": 4.0,
+          "committed_count": 22,
+          "completed_count": 4,
+          "commitment_ratio": 0.101,
+          "carry_over_sp": 35.55,
+          "carry_over_count": 18,
+          "unestimated_subtasks": 0,
+          "per_person": [
+            {
+              "assignee": "Pavel Tobengauz",
+              "committed_sp": 8.5,
+              "completed_sp": 2.5,
+              "count": 6
+            },
+            {
+              "assignee": "Qurratulain Khaleeq",
+              "committed_sp": 1.0,
+              "completed_sp": 1.0,
+              "count": 1
+            },
+            {
+              "assignee": "Ziqi Wang",
+              "committed_sp": 7.5,
+              "completed_sp": 0.5,
+              "count": 4
+            },
+            {
+              "assignee": "Sara Boroni",
+              "committed_sp": 7.5,
+              "completed_sp": 0,
+              "count": 2
+            },
+            {
+              "assignee": "Simon Brandenburg",
+              "committed_sp": 9.05,
+              "completed_sp": 0,
+              "count": 7
+            },
+            {
+              "assignee": "Prudhviteja Cherukuri",
+              "committed_sp": 6.0,
+              "completed_sp": 0,
+              "count": 2
+            }
+          ],
+          "per_team": [
+            {
+              "team": "MSI_EXP",
+              "committed_sp": 39.55,
+              "completed_sp": 4.0
+            }
+          ]
+        }
+      },
+      "issues": [
+        {
+          "key": "MSI-1733",
+          "summary": "M2: Quantify Baseline Decay & Carryover",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Simon Brandenburg",
+          "parent_key": "MSI-1711",
+          "parent_summary": "Create reliable and comparable cross-locale and cross-media long-term iROAS for Brand investment",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 16.5,
+          "due_date": "2026-05-31",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1764",
+          "summary": "M1: All creative tests documented in marketing test library",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1716",
+          "parent_summary": "Accelerate creative experimentation velocity to increase the number of conclusive tests per HY by ≥ 20% on LTV and ≥10% in Digital",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 14.5,
+          "due_date": "2026-07-03",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1765",
+          "summary": "M2: Recommendation document with min. 3 opportunities to reduce cycles or increase number of tests",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1716",
+          "parent_summary": "Accelerate creative experimentation velocity to increase the number of conclusive tests per HY by ≥ 20% on LTV and ≥10% in Digital",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 6.0,
+          "due_date": "2026-07-03",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1804",
+          "summary": "M1: Collect past tests information, Pipeline Velocity baselined",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Ziqi Wang",
+          "parent_key": "MSI-1723",
+          "parent_summary": "Establish standardized experimentation framework with acceptance criteria and failure-to-learn loop",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 6.0,
+          "due_date": "2026-05-15",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1808",
+          "summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1723",
+          "parent_summary": "Establish standardized experimentation framework with acceptance criteria and failure-to-learn loop",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 19.0,
+          "due_date": "2026-06-26",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1853",
+          "summary": "Define test library schema and metric requirements for geo tests",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1808",
+          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 1.0,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1860",
+          "summary": "M1S1: Develop an improved test library schema for LTV",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1764",
+          "parent_summary": "M1: All creative tests documented in marketing test library",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-04-24",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1861",
+          "summary": "M1S2: Develop the test library schema for Digital H2H tests",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1764",
+          "parent_summary": "M1: All creative tests documented in marketing test library",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1862",
+          "summary": "M1S3: Fully document all past LTV creative tests from 2024-2026 in the test library using agreed schema",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1764",
+          "parent_summary": "M1: All creative tests documented in marketing test library",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 1.5,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1863",
+          "summary": "M1S4: Fully document all past Digital creative tests from 2024-2026 in the test library using agreed schema",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1764",
+          "parent_summary": "M1: All creative tests documented in marketing test library",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 4.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1864",
+          "summary": "M1S5: Productionize the library with a data table and Looker dashboard",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1764",
+          "parent_summary": "M1: All creative tests documented in marketing test library",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 3.0,
+          "due_date": "2026-06-05",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1865",
+          "summary": "M2S1: Describe current end-to-end creative testing process for LTV and Digital",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1765",
+          "parent_summary": "M2: Recommendation document with min. 3 opportunities to reduce cycles or increase number of tests",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1866",
+          "summary": "M2S2: Diagnose bottlenecks and velocity constraints",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1765",
+          "parent_summary": "M2: Recommendation document with min. 3 opportunities to reduce cycles or increase number of tests",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-06-05",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1868",
+          "summary": "M2S3: Identify ≥3 improvement opportunities with evaluation for feasibility and expected velocity impact",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1765",
+          "parent_summary": "M2: Recommendation document with min. 3 opportunities to reduce cycles or increase number of tests",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-07-03",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1886",
+          "summary": "Build BigQuery data tables",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Anna Mamaeva",
+          "parent_key": "MSI-1808",
+          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1887",
+          "summary": "Develop test entry mechanism (intake form + process)",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Anna Mamaeva",
+          "parent_key": "MSI-1808",
+          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 3.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1888",
+          "summary": "Build Looker Explore for test library",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Anna Mamaeva",
+          "parent_key": "MSI-1808",
+          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 3.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1890",
+          "summary": "Backfill 2025-2026 historical tests",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Anna Mamaeva",
+          "parent_key": "MSI-1808",
+          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-06-05",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1892",
+          "summary": "Campaign calendar integration + stakeholder validation",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Anna Mamaeva",
+          "parent_key": "MSI-1808",
+          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 3.0,
+          "due_date": "2026-06-19",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1895",
+          "summary": "Stakeholder validation and rollout",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Anna Mamaeva",
+          "parent_key": "MSI-1808",
+          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 3.0,
+          "due_date": "2026-06-26",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1949",
+          "summary": "M1S6: Define a process of updating the library with new tests",
+          "status": "Backlog",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1764",
+          "parent_summary": "M1: All creative tests documented in marketing test library",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-07-03",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1962",
+          "summary": "Review and summarize past test results, analyze historical pipeline velocity( LTV, CTV, Audio)",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Ziqi Wang",
+          "parent_key": "MSI-1804",
+          "parent_summary": "M1: Collect past tests information, Pipeline Velocity baselined",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 3.0,
+          "due_date": "2026-04-28",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1972",
+          "summary": "Collect and preprocess baseline data",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Simon Brandenburg",
+          "parent_key": "MSI-1733",
+          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 1.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1973",
+          "summary": "Quantify baseline decay using statistical modeling - Part 1",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Prudhviteja Cherukuri",
+          "parent_key": "MSI-1733",
+          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-1974",
+          "summary": "Measure carryover effects in brand investment - Part 1",
+          "status": "Completed : Not Part of Sprint",
+          "status_category": "Done",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Prudhviteja Cherukuri",
+          "parent_key": "MSI-1733",
+          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.5,
+          "due_date": "2026-05-08",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2144",
+          "summary": "TV spot analysis for JP",
+          "status": "Feedback",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "BAU_MSI",
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 0.5,
+          "due_date": "2026-05-12",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2145",
+          "summary": "Define test library schema and metric requirements per channel for digital",
+          "status": "Ready for Sprint",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1808",
+          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2155",
+          "summary": "JP Campaign - Target Region Selection",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sara Boroni",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "ADHOC_MSI",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 1.5,
+          "due_date": "2026-05-05",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2157",
+          "summary": "MSI input for SB deck - Simon",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Simon Brandenburg",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "ADHOC_MSI",
+            "Adhoc",
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2164",
+          "summary": "MSI SG interviews",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Request",
+          "hierarchy_level": 0,
+          "assignee": "Simon Brandenburg",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "ADHOC_MSI",
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 0.75,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2168",
+          "summary": "Quantify baseline decay using statistical modeling - Part 2",
+          "status": "Ready for Sprint",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Prudhviteja Cherukuri",
+          "parent_key": "MSI-1733",
+          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 3.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2169",
+          "summary": "Measure carryover effects in brand investment - Part 2",
+          "status": "Ready for Sprint",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Prudhviteja Cherukuri",
+          "parent_key": "MSI-1733",
+          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 3.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2221",
+          "summary": "CW20&CW21 Performance tracking & root cause identification : Dev. EUR",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Simon Brandenburg",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026",
+            "MSI_TESTING_BAU"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 1.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2222",
+          "summary": "AMR cover CW20/21",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Simon Brandenburg",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 1.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2223",
+          "summary": "CW20/21 - Key reoccurring meetings with SG representation requirement",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Simon Brandenburg",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2224",
+          "summary": "Updated Q2 FF",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Simon Brandenburg",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "ADHOC_MSI",
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 0.8,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2227",
+          "summary": "Process coordination & AI review",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Simon Brandenburg",
+          "parent_key": "MSI-1733",
+          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026",
+            "MSI_TESTING"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 1.5,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2228",
+          "summary": "CW 20& 21 Performance tracking & Root Cause Identification",
+          "status": "Ready for Sprint",
+          "status_category": "To Do",
+          "issue_type": "Request",
+          "hierarchy_level": 0,
+          "assignee": "Ziqi Wang",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 1.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2229",
+          "summary": "Documentation and handover - part 2",
+          "status": "Selected for Development",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Sara Boroni",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 6.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2230",
+          "summary": "Organic Referral - comms &  user journey design",
+          "status": "Ready for Sprint",
+          "status_category": "To Do",
+          "issue_type": "Request",
+          "hierarchy_level": 0,
+          "assignee": "Ziqi Wang",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "MSI_OKRS_2026",
+            "MSI_TESTING"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 3.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2231",
+          "summary": "Review and summarize past test results, analyze historical pipeline velocity( digital)",
+          "status": "Ready for Sprint",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Ziqi Wang",
+          "parent_key": "MSI-1804",
+          "parent_summary": "M1: Collect past tests information, Pipeline Velocity baselined",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 3.0,
+          "due_date": "2026-05-21",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2235",
+          "summary": "Cannot see data in Japan Regional Report dashboard on Controller",
+          "status": "Feedback",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Qurratulain Khaleeq",
+          "parent_key": "MSI-1020",
+          "parent_summary": "BAU / Pre Planned Work",
+          "labels": [
+            "MSI_OKRS_2026",
+            "MSI_SCALING",
+            "MSI_TESTING"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 1.0,
+          "due_date": "2026-05-13",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
+        },
+        {
+          "key": "MSI-2237",
+          "summary": "sense check the narrative and data, potentially some further refinement requests",
+          "status": "Feedback",
+          "status_category": "To Do",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Ziqi Wang",
+          "parent_key": "MSI-2157",
+          "parent_summary": "MSI input for SB deck - Simon",
+          "labels": [
+            "ADHOC_MSI",
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 0.5,
+          "due_date": "2026-05-15",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "adhoc"
+        },
+        {
+          "key": "MSI-2238",
+          "summary": "Innovid analysis - additional",
+          "status": "Feedback",
+          "status_category": "To Do",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1839",
+          "parent_summary": "BAU_MSI_OKR_Summer",
+          "labels": [
+            "MSI_EXP",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 2.0,
+          "due_date": "2026-05-15",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "bau"
+        },
+        {
+          "key": "MSI-2239",
+          "summary": "Analyze creative tests in US; ES; FI and DE",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Task",
+          "hierarchy_level": 0,
+          "assignee": "Pavel Tobengauz",
+          "parent_key": "MSI-1840",
+          "parent_summary": "Adhocs_MSI_OKR_Summer",
+          "labels": [
+            "ADHOC_MSI",
+            "MSI_OKRS_2026"
+          ],
+          "team": "MSI_EXP",
+          "story_points": 0.0,
+          "due_date": "2026-05-19",
+          "resolution_date": null,
+          "sprint_name": "MSI_EXP_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "adhoc"
+        }
+      ]
+    },
+    {
+      "snapshot_date": "2026-05-18T10:39:43.056098+00:00",
       "sprint_name": "MSI_OPS_SPRINT_3",
       "sprint_state": "active",
       "sprint_start": "2026-05-11",
       "sprint_end": "2026-05-22",
       "metrics": {
-        "committed_sp": 30.2,
+        "committed_sp": 32.2,
         "completed_sp": 2.7,
         "velocity": 2.7,
-        "committed_count": 31,
+        "committed_count": 32,
         "completed_count": 3,
-        "commitment_ratio": 0.089,
-        "carry_over_sp": 27.5,
-        "carry_over_count": 28,
-        "unestimated_subtasks": 13,
+        "commitment_ratio": 0.084,
+        "carry_over_sp": 29.500000000000004,
+        "carry_over_count": 29,
+        "unestimated_subtasks": 12,
         "per_person": [
           {
             "assignee": "Sandra Knezevic",
@@ -8220,9 +9432,9 @@
           },
           {
             "assignee": "Qurratulain Khaleeq",
-            "committed_sp": 2.2,
+            "committed_sp": 4.2,
             "completed_sp": 0.2,
-            "count": 6
+            "count": 7
           },
           {
             "assignee": "Saif Aslam",
@@ -8270,22 +9482,22 @@
         "per_team": [
           {
             "team": "MSI_OPS",
-            "committed_sp": 30.2,
+            "committed_sp": 32.2,
             "completed_sp": 2.7
           }
         ]
       },
       "team_metrics": {
         "MSI_OPS": {
-          "committed_sp": 30.2,
+          "committed_sp": 32.2,
           "completed_sp": 2.7,
           "velocity": 2.7,
-          "committed_count": 31,
+          "committed_count": 32,
           "completed_count": 3,
-          "commitment_ratio": 0.089,
-          "carry_over_sp": 27.5,
-          "carry_over_count": 28,
-          "unestimated_subtasks": 13,
+          "commitment_ratio": 0.084,
+          "carry_over_sp": 29.500000000000004,
+          "carry_over_count": 29,
+          "unestimated_subtasks": 12,
           "per_person": [
             {
               "assignee": "Sandra Knezevic",
@@ -8301,9 +9513,9 @@
             },
             {
               "assignee": "Qurratulain Khaleeq",
-              "committed_sp": 2.2,
+              "committed_sp": 4.2,
               "completed_sp": 0.2,
-              "count": 6
+              "count": 7
             },
             {
               "assignee": "Saif Aslam",
@@ -8351,7 +9563,7 @@
           "per_team": [
             {
               "team": "MSI_OPS",
-              "committed_sp": 30.2,
+              "committed_sp": 32.2,
               "completed_sp": 2.7
             }
           ]
@@ -8494,7 +9706,7 @@
             "MSI_OPS"
           ],
           "team": "MSI_OPS",
-          "story_points": 0.0,
+          "story_points": 2.0,
           "due_date": "2026-05-22",
           "resolution_date": null,
           "sprint_name": "MSI_OPS_SPRINT_3",
@@ -9485,8 +10697,8 @@
         {
           "key": "MSI-2119",
           "summary": "Feature engineering & QV model training pipeline",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
+          "status": "In Progress",
+          "status_category": "In Progress",
           "issue_type": "Sub-task",
           "hierarchy_level": -1,
           "assignee": "Saif Aslam",
@@ -9725,8 +10937,8 @@
         {
           "key": "MSI-2209",
           "summary": "Refine Topline dashboard mockup with detailed chart specifications",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
+          "status": "In Progress",
+          "status_category": "In Progress",
           "issue_type": "Sub-task",
           "hierarchy_level": -1,
           "assignee": "Qurratulain Khaleeq",
@@ -9737,7 +10949,7 @@
             "MSI_OPS"
           ],
           "team": "MSI_OPS",
-          "story_points": 0.0,
+          "story_points": 1.0,
           "due_date": "2026-05-22",
           "resolution_date": null,
           "sprint_name": "MSI_OPS_SPRINT_3",
@@ -9942,11 +11154,35 @@
           "sprint_start": "2026-05-11",
           "sprint_end": "2026-05-22",
           "category": "okr"
+        },
+        {
+          "key": "MSI-2243",
+          "summary": "Incorporate stakeholder feedback into Topline, Paid App and SEM chart sections",
+          "status": "In Progress",
+          "status_category": "In Progress",
+          "issue_type": "Sub-task",
+          "hierarchy_level": -1,
+          "assignee": "Qurratulain Khaleeq",
+          "parent_key": "MSI-1769",
+          "parent_summary": "M3: Topline dashboard mockup refined and design approved by stakeholders",
+          "labels": [
+            "MSI_OKRS_2026",
+            "MSI_OPS"
+          ],
+          "team": "MSI_OPS",
+          "story_points": 1.0,
+          "due_date": "2026-05-22",
+          "resolution_date": null,
+          "sprint_name": "MSI_OPS_SPRINT_3",
+          "sprint_state": "active",
+          "sprint_start": "2026-05-11",
+          "sprint_end": "2026-05-22",
+          "category": "okr"
         }
       ]
     },
     {
-      "snapshot_date": "2026-05-17T08:31:52.753073+00:00",
+      "snapshot_date": "2026-05-18T10:39:43.056098+00:00",
       "sprint_name": "BRAND_CIM_SPRINT_3",
       "sprint_state": "active",
       "sprint_start": "2026-05-11",
@@ -10826,1218 +12062,6 @@
           "category": "okr"
         }
       ]
-    },
-    {
-      "snapshot_date": "2026-05-17T08:31:52.753073+00:00",
-      "sprint_name": "MSI_EXP_SPRINT_3",
-      "sprint_state": "active",
-      "sprint_start": "2026-05-11",
-      "sprint_end": "2026-05-22",
-      "metrics": {
-        "committed_sp": 39.55,
-        "completed_sp": 4.0,
-        "velocity": 4.0,
-        "committed_count": 22,
-        "completed_count": 4,
-        "commitment_ratio": 0.101,
-        "carry_over_sp": 35.55,
-        "carry_over_count": 18,
-        "unestimated_subtasks": 0,
-        "per_person": [
-          {
-            "assignee": "Pavel Tobengauz",
-            "committed_sp": 8.5,
-            "completed_sp": 2.5,
-            "count": 6
-          },
-          {
-            "assignee": "Qurratulain Khaleeq",
-            "committed_sp": 1.0,
-            "completed_sp": 1.0,
-            "count": 1
-          },
-          {
-            "assignee": "Ziqi Wang",
-            "committed_sp": 7.5,
-            "completed_sp": 0.5,
-            "count": 4
-          },
-          {
-            "assignee": "Sara Boroni",
-            "committed_sp": 7.5,
-            "completed_sp": 0,
-            "count": 2
-          },
-          {
-            "assignee": "Simon Brandenburg",
-            "committed_sp": 9.05,
-            "completed_sp": 0,
-            "count": 7
-          },
-          {
-            "assignee": "Prudhviteja Cherukuri",
-            "committed_sp": 6.0,
-            "completed_sp": 0,
-            "count": 2
-          }
-        ],
-        "per_team": [
-          {
-            "team": "MSI_EXP",
-            "committed_sp": 39.55,
-            "completed_sp": 4.0
-          }
-        ]
-      },
-      "team_metrics": {
-        "MSI_EXP": {
-          "committed_sp": 39.55,
-          "completed_sp": 4.0,
-          "velocity": 4.0,
-          "committed_count": 22,
-          "completed_count": 4,
-          "commitment_ratio": 0.101,
-          "carry_over_sp": 35.55,
-          "carry_over_count": 18,
-          "unestimated_subtasks": 0,
-          "per_person": [
-            {
-              "assignee": "Pavel Tobengauz",
-              "committed_sp": 8.5,
-              "completed_sp": 2.5,
-              "count": 6
-            },
-            {
-              "assignee": "Qurratulain Khaleeq",
-              "committed_sp": 1.0,
-              "completed_sp": 1.0,
-              "count": 1
-            },
-            {
-              "assignee": "Ziqi Wang",
-              "committed_sp": 7.5,
-              "completed_sp": 0.5,
-              "count": 4
-            },
-            {
-              "assignee": "Sara Boroni",
-              "committed_sp": 7.5,
-              "completed_sp": 0,
-              "count": 2
-            },
-            {
-              "assignee": "Simon Brandenburg",
-              "committed_sp": 9.05,
-              "completed_sp": 0,
-              "count": 7
-            },
-            {
-              "assignee": "Prudhviteja Cherukuri",
-              "committed_sp": 6.0,
-              "completed_sp": 0,
-              "count": 2
-            }
-          ],
-          "per_team": [
-            {
-              "team": "MSI_EXP",
-              "committed_sp": 39.55,
-              "completed_sp": 4.0
-            }
-          ]
-        }
-      },
-      "issues": [
-        {
-          "key": "MSI-1733",
-          "summary": "M2: Quantify Baseline Decay & Carryover",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Simon Brandenburg",
-          "parent_key": "MSI-1711",
-          "parent_summary": "Create reliable and comparable cross-locale and cross-media long-term iROAS for Brand investment",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 16.5,
-          "due_date": "2026-05-31",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1764",
-          "summary": "M1: All creative tests documented in marketing test library",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1716",
-          "parent_summary": "Accelerate creative experimentation velocity to increase the number of conclusive tests per HY by ≥ 20% on LTV and ≥10% in Digital",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 14.5,
-          "due_date": "2026-07-03",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1765",
-          "summary": "M2: Recommendation document with min. 3 opportunities to reduce cycles or increase number of tests",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1716",
-          "parent_summary": "Accelerate creative experimentation velocity to increase the number of conclusive tests per HY by ≥ 20% on LTV and ≥10% in Digital",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 6.0,
-          "due_date": "2026-07-03",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1804",
-          "summary": "M1: Collect past tests information, Pipeline Velocity baselined",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Ziqi Wang",
-          "parent_key": "MSI-1723",
-          "parent_summary": "Establish standardized experimentation framework with acceptance criteria and failure-to-learn loop",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 6.0,
-          "due_date": "2026-05-15",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1808",
-          "summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1723",
-          "parent_summary": "Establish standardized experimentation framework with acceptance criteria and failure-to-learn loop",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 19.0,
-          "due_date": "2026-06-26",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1853",
-          "summary": "Define test library schema and metric requirements for geo tests",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1808",
-          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 1.0,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1860",
-          "summary": "M1S1: Develop an improved test library schema for LTV",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1764",
-          "parent_summary": "M1: All creative tests documented in marketing test library",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-04-24",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1861",
-          "summary": "M1S2: Develop the test library schema for Digital H2H tests",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1764",
-          "parent_summary": "M1: All creative tests documented in marketing test library",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1862",
-          "summary": "M1S3: Fully document all past LTV creative tests from 2024-2026 in the test library using agreed schema",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1764",
-          "parent_summary": "M1: All creative tests documented in marketing test library",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 1.5,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1863",
-          "summary": "M1S4: Fully document all past Digital creative tests from 2024-2026 in the test library using agreed schema",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1764",
-          "parent_summary": "M1: All creative tests documented in marketing test library",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 4.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1864",
-          "summary": "M1S5: Productionize the library with a data table and Looker dashboard",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1764",
-          "parent_summary": "M1: All creative tests documented in marketing test library",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 3.0,
-          "due_date": "2026-06-05",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1865",
-          "summary": "M2S1: Describe current end-to-end creative testing process for LTV and Digital",
-          "status": "In Progress",
-          "status_category": "In Progress",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1765",
-          "parent_summary": "M2: Recommendation document with min. 3 opportunities to reduce cycles or increase number of tests",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1866",
-          "summary": "M2S2: Diagnose bottlenecks and velocity constraints",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1765",
-          "parent_summary": "M2: Recommendation document with min. 3 opportunities to reduce cycles or increase number of tests",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-06-05",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1868",
-          "summary": "M2S3: Identify ≥3 improvement opportunities with evaluation for feasibility and expected velocity impact",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1765",
-          "parent_summary": "M2: Recommendation document with min. 3 opportunities to reduce cycles or increase number of tests",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-07-03",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1886",
-          "summary": "Build BigQuery data tables",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Anna Mamaeva",
-          "parent_key": "MSI-1808",
-          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1887",
-          "summary": "Develop test entry mechanism (intake form + process)",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Anna Mamaeva",
-          "parent_key": "MSI-1808",
-          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 3.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1888",
-          "summary": "Build Looker Explore for test library",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Anna Mamaeva",
-          "parent_key": "MSI-1808",
-          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 3.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1890",
-          "summary": "Backfill 2025-2026 historical tests",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Anna Mamaeva",
-          "parent_key": "MSI-1808",
-          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-06-05",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1892",
-          "summary": "Campaign calendar integration + stakeholder validation",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Anna Mamaeva",
-          "parent_key": "MSI-1808",
-          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 3.0,
-          "due_date": "2026-06-19",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1895",
-          "summary": "Stakeholder validation and rollout",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Anna Mamaeva",
-          "parent_key": "MSI-1808",
-          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 3.0,
-          "due_date": "2026-06-26",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1949",
-          "summary": "M1S6: Define a process of updating the library with new tests",
-          "status": "Backlog",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1764",
-          "parent_summary": "M1: All creative tests documented in marketing test library",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-07-03",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1962",
-          "summary": "Review and summarize past test results, analyze historical pipeline velocity( LTV, CTV, Audio)",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Ziqi Wang",
-          "parent_key": "MSI-1804",
-          "parent_summary": "M1: Collect past tests information, Pipeline Velocity baselined",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 3.0,
-          "due_date": "2026-04-28",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1972",
-          "summary": "Collect and preprocess baseline data",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Simon Brandenburg",
-          "parent_key": "MSI-1733",
-          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 1.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1973",
-          "summary": "Quantify baseline decay using statistical modeling - Part 1",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Prudhviteja Cherukuri",
-          "parent_key": "MSI-1733",
-          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-1974",
-          "summary": "Measure carryover effects in brand investment - Part 1",
-          "status": "Completed : Not Part of Sprint",
-          "status_category": "Done",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Prudhviteja Cherukuri",
-          "parent_key": "MSI-1733",
-          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.5,
-          "due_date": "2026-05-08",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2144",
-          "summary": "TV spot analysis for JP",
-          "status": "Feedback",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "BAU_MSI",
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 0.5,
-          "due_date": "2026-05-12",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2145",
-          "summary": "Define test library schema and metric requirements per channel for digital",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1808",
-          "parent_summary": "M5: Build centralized test library (BigQuery tracker, Looker Explore, test calendar, campaign calendar)",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2155",
-          "summary": "JP Campaign - Target Region Selection",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sara Boroni",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "ADHOC_MSI",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 1.5,
-          "due_date": "2026-05-05",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2157",
-          "summary": "MSI input for SB deck - Simon",
-          "status": "In Progress",
-          "status_category": "In Progress",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Simon Brandenburg",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "ADHOC_MSI",
-            "Adhoc",
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2164",
-          "summary": "MSI SG interviews",
-          "status": "In Progress",
-          "status_category": "In Progress",
-          "issue_type": "Request",
-          "hierarchy_level": 0,
-          "assignee": "Simon Brandenburg",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "ADHOC_MSI",
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 0.75,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2168",
-          "summary": "Quantify baseline decay using statistical modeling - Part 2",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Prudhviteja Cherukuri",
-          "parent_key": "MSI-1733",
-          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 3.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2169",
-          "summary": "Measure carryover effects in brand investment - Part 2",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Prudhviteja Cherukuri",
-          "parent_key": "MSI-1733",
-          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 3.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2221",
-          "summary": "CW20&CW21 Performance tracking & root cause identification : Dev. EUR",
-          "status": "In Progress",
-          "status_category": "In Progress",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Simon Brandenburg",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026",
-            "MSI_TESTING_BAU"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 1.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2222",
-          "summary": "AMR cover CW20/21",
-          "status": "In Progress",
-          "status_category": "In Progress",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Simon Brandenburg",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 1.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2223",
-          "summary": "CW20/21 - Key reoccurring meetings with SG representation requirement",
-          "status": "In Progress",
-          "status_category": "In Progress",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Simon Brandenburg",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2224",
-          "summary": "Updated Q2 FF",
-          "status": "In Progress",
-          "status_category": "In Progress",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Simon Brandenburg",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "ADHOC_MSI",
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 0.8,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2227",
-          "summary": "Process coordination & AI review",
-          "status": "In Progress",
-          "status_category": "In Progress",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Simon Brandenburg",
-          "parent_key": "MSI-1733",
-          "parent_summary": "M2: Quantify Baseline Decay & Carryover",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026",
-            "MSI_TESTING"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 1.5,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2228",
-          "summary": "CW 20& 21 Performance tracking & Root Cause Identification",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
-          "issue_type": "Request",
-          "hierarchy_level": 0,
-          "assignee": "Ziqi Wang",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 1.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2229",
-          "summary": "Documentation and handover - part 2",
-          "status": "Selected for Development",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Sara Boroni",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 6.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2230",
-          "summary": "Organic Referral - comms &  user journey design",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
-          "issue_type": "Request",
-          "hierarchy_level": 0,
-          "assignee": "Ziqi Wang",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "MSI_OKRS_2026",
-            "MSI_TESTING"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 3.0,
-          "due_date": "2026-05-22",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2231",
-          "summary": "Review and summarize past test results, analyze historical pipeline velocity( digital)",
-          "status": "Ready for Sprint",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Ziqi Wang",
-          "parent_key": "MSI-1804",
-          "parent_summary": "M1: Collect past tests information, Pipeline Velocity baselined",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 3.0,
-          "due_date": "2026-05-21",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2235",
-          "summary": "Cannot see data in Japan Regional Report dashboard on Controller",
-          "status": "Feedback",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Qurratulain Khaleeq",
-          "parent_key": "MSI-1020",
-          "parent_summary": "BAU / Pre Planned Work",
-          "labels": [
-            "MSI_OKRS_2026",
-            "MSI_SCALING",
-            "MSI_TESTING"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 1.0,
-          "due_date": "2026-05-13",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "okr"
-        },
-        {
-          "key": "MSI-2237",
-          "summary": "sense check the narrative and data, potentially some further refinement requests",
-          "status": "Feedback",
-          "status_category": "To Do",
-          "issue_type": "Sub-task",
-          "hierarchy_level": -1,
-          "assignee": "Ziqi Wang",
-          "parent_key": "MSI-2157",
-          "parent_summary": "MSI input for SB deck - Simon",
-          "labels": [
-            "ADHOC_MSI",
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 0.5,
-          "due_date": "2026-05-15",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "adhoc"
-        },
-        {
-          "key": "MSI-2238",
-          "summary": "Innovid analysis - additional",
-          "status": "Feedback",
-          "status_category": "To Do",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1839",
-          "parent_summary": "BAU_MSI_OKR_Summer",
-          "labels": [
-            "MSI_EXP",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 2.0,
-          "due_date": "2026-05-15",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "bau"
-        },
-        {
-          "key": "MSI-2239",
-          "summary": "Analyze creative tests in US; ES; FI and DE",
-          "status": "In Progress",
-          "status_category": "In Progress",
-          "issue_type": "Task",
-          "hierarchy_level": 0,
-          "assignee": "Pavel Tobengauz",
-          "parent_key": "MSI-1840",
-          "parent_summary": "Adhocs_MSI_OKR_Summer",
-          "labels": [
-            "ADHOC_MSI",
-            "MSI_OKRS_2026"
-          ],
-          "team": "MSI_EXP",
-          "story_points": 0.0,
-          "due_date": "2026-05-19",
-          "resolution_date": null,
-          "sprint_name": "MSI_EXP_SPRINT_3",
-          "sprint_state": "active",
-          "sprint_start": "2026-05-11",
-          "sprint_end": "2026-05-22",
-          "category": "adhoc"
-        }
-      ]
     }
   ],
   "epics": [
@@ -12661,9 +12685,9 @@
           "key": "MSI-1769",
           "summary": "M3: Topline dashboard mockup refined and design approved by stakeholders",
           "status": "Backlog",
-          "story_points": 0.0,
+          "story_points": 2.0,
           "due_date": "2026-05-22",
-          "total_subtasks": 6,
+          "total_subtasks": 7,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
           "weight": 0.1
@@ -13896,9 +13920,9 @@
       "epic_key": "MSI-1840",
       "summary": "Adhocs_MSI_OKR_Summer",
       "team": "Unknown",
-      "total_milestones": 43,
+      "total_milestones": 45,
       "done_milestones": 24,
-      "progress": 0.5592,
+      "progress": 0.5328,
       "milestones": [
         {
           "key": "MSI-1673",
@@ -13909,7 +13933,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-1674",
@@ -13920,7 +13944,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-1699",
@@ -13931,7 +13955,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-1700",
@@ -13942,7 +13966,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-1701",
@@ -13953,7 +13977,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-1836",
@@ -13964,7 +13988,7 @@
           "total_subtasks": 1,
           "done_subtasks": 1,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-1885",
@@ -13975,7 +13999,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-1959",
@@ -13986,7 +14010,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2027",
@@ -13997,7 +14021,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2028",
@@ -14008,7 +14032,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2033",
@@ -14019,7 +14043,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2041",
@@ -14030,7 +14054,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2047",
@@ -14041,7 +14065,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2048",
@@ -14052,7 +14076,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2055",
@@ -14063,7 +14087,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2063",
@@ -14074,7 +14098,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2064",
@@ -14085,7 +14109,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2066",
@@ -14096,7 +14120,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2126",
@@ -14107,7 +14131,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2127",
@@ -14118,7 +14142,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2132",
@@ -14129,7 +14153,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2133",
@@ -14140,7 +14164,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2136",
@@ -14151,7 +14175,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2137",
@@ -14162,7 +14186,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2151",
@@ -14173,7 +14197,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2152",
@@ -14184,7 +14208,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2155",
@@ -14195,7 +14219,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2157",
@@ -14206,7 +14230,7 @@
           "total_subtasks": 1,
           "done_subtasks": 1,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2158",
@@ -14217,7 +14241,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2159",
@@ -14228,7 +14252,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2160",
@@ -14239,7 +14263,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2170",
@@ -14250,7 +14274,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2173",
@@ -14261,7 +14285,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2174",
@@ -14272,7 +14296,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2180",
@@ -14283,7 +14307,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 1.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2181",
@@ -14294,7 +14318,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2187",
@@ -14305,7 +14329,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2214",
@@ -14316,7 +14340,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2224",
@@ -14327,7 +14351,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2226",
@@ -14338,7 +14362,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2239",
@@ -14349,7 +14373,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2240",
@@ -14360,7 +14384,7 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
         },
         {
           "key": "MSI-2242",
@@ -14371,7 +14395,29 @@
           "total_subtasks": 0,
           "done_subtasks": 0,
           "milestone_progress": 0.0,
-          "weight": 0.0233
+          "weight": 0.0222
+        },
+        {
+          "key": "MSI-2244",
+          "summary": "tEST",
+          "status": "Rejected",
+          "story_points": 0.0,
+          "due_date": "2026-05-21",
+          "total_subtasks": 0,
+          "done_subtasks": 0,
+          "milestone_progress": 0.0,
+          "weight": 0.0222
+        },
+        {
+          "key": "MSI-2245",
+          "summary": "exROAS adjusted metric addition on Paid App Metrics Explore",
+          "status": "Backlog",
+          "story_points": 0.0,
+          "due_date": "2026-06-05",
+          "total_subtasks": 0,
+          "done_subtasks": 0,
+          "milestone_progress": 0.0,
+          "weight": 0.0222
         }
       ]
     }
@@ -16262,7 +16308,7 @@
         "MSI_OPS"
       ],
       "team": "MSI_OPS",
-      "story_points": 0.0,
+      "story_points": 2.0,
       "due_date": "2026-05-22",
       "resolution_date": null,
       "sprint_name": "MSI_OPS_SPRINT_3",
@@ -18120,8 +18166,8 @@
     {
       "key": "MSI-1861",
       "summary": "M1S2: Develop the test library schema for Digital H2H tests",
-      "status": "Ready for Sprint",
-      "status_category": "To Do",
+      "status": "In Progress",
+      "status_category": "In Progress",
       "issue_type": "Sub-task",
       "hierarchy_level": -1,
       "assignee": "Pavel Tobengauz",
@@ -22632,8 +22678,8 @@
     {
       "key": "MSI-2119",
       "summary": "Feature engineering & QV model training pipeline",
-      "status": "Ready for Sprint",
-      "status_category": "To Do",
+      "status": "In Progress",
+      "status_category": "In Progress",
       "issue_type": "Sub-task",
       "hierarchy_level": -1,
       "assignee": "Saif Aslam",
@@ -24039,8 +24085,8 @@
     {
       "key": "MSI-2209",
       "summary": "Refine Topline dashboard mockup with detailed chart specifications",
-      "status": "Ready for Sprint",
-      "status_category": "To Do",
+      "status": "In Progress",
+      "status_category": "In Progress",
       "issue_type": "Sub-task",
       "hierarchy_level": -1,
       "assignee": "Qurratulain Khaleeq",
@@ -24051,7 +24097,7 @@
         "MSI_OPS"
       ],
       "team": "MSI_OPS",
-      "story_points": 0.0,
+      "story_points": 1.0,
       "due_date": "2026-05-22",
       "resolution_date": null,
       "sprint_name": "MSI_OPS_SPRINT_3",
@@ -24667,6 +24713,78 @@
       "team": "MSI_OPS",
       "story_points": 1.0,
       "due_date": "2026-05-19",
+      "resolution_date": null,
+      "sprint_name": null,
+      "sprint_state": null,
+      "sprint_start": null,
+      "sprint_end": null,
+      "category": "adhoc"
+    },
+    {
+      "key": "MSI-2243",
+      "summary": "Incorporate stakeholder feedback into Topline, Paid App and SEM chart sections",
+      "status": "In Progress",
+      "status_category": "In Progress",
+      "issue_type": "Sub-task",
+      "hierarchy_level": -1,
+      "assignee": "Qurratulain Khaleeq",
+      "parent_key": "MSI-1769",
+      "parent_summary": "M3: Topline dashboard mockup refined and design approved by stakeholders",
+      "labels": [
+        "MSI_OKRS_2026",
+        "MSI_OPS"
+      ],
+      "team": "MSI_OPS",
+      "story_points": 1.0,
+      "due_date": "2026-05-22",
+      "resolution_date": null,
+      "sprint_name": "MSI_OPS_SPRINT_3",
+      "sprint_state": "active",
+      "sprint_start": "2026-05-11",
+      "sprint_end": "2026-05-22",
+      "category": "okr"
+    },
+    {
+      "key": "MSI-2244",
+      "summary": "tEST",
+      "status": "Rejected",
+      "status_category": "Done",
+      "issue_type": "Task",
+      "hierarchy_level": 0,
+      "assignee": "Pavel Tobengauz",
+      "parent_key": "MSI-1840",
+      "parent_summary": "Adhocs_MSI_OKR_Summer",
+      "labels": [
+        "ADHOC_MSI",
+        "MSI_OKRS_2026"
+      ],
+      "team": "Unknown",
+      "story_points": 0.0,
+      "due_date": "2026-05-21",
+      "resolution_date": null,
+      "sprint_name": null,
+      "sprint_state": null,
+      "sprint_start": null,
+      "sprint_end": null,
+      "category": "adhoc"
+    },
+    {
+      "key": "MSI-2245",
+      "summary": "exROAS adjusted metric addition on Paid App Metrics Explore",
+      "status": "Backlog",
+      "status_category": "To Do",
+      "issue_type": "Task",
+      "hierarchy_level": 0,
+      "assignee": "Qurratulain Khaleeq",
+      "parent_key": "MSI-1840",
+      "parent_summary": "Adhocs_MSI_OKR_Summer",
+      "labels": [
+        "ADHOC_MSI",
+        "MSI_OKRS_2026"
+      ],
+      "team": "Unknown",
+      "story_points": 0.0,
+      "due_date": "2026-06-05",
       "resolution_date": null,
       "sprint_name": null,
       "sprint_state": null,
